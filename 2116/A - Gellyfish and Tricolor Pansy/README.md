@@ -1,0 +1,22 @@
+<h2><a href="https://codeforces.com/contest/2116/problem/A" target="_blank" rel="noopener noreferrer">2116A — Gellyfish and Tricolor Pansy</a></h2>
+
+| | |
+|---|---|
+| **Difficulty** | 800 |
+| **Language** | C++17 (GCC 7-32) |
+| **Verdict** | ✅ Accepted |
+| **Problem Link** | [Codeforces 2116A](https://codeforces.com/contest/2116/problem/A) |
+
+## Topics
+`games` `greedy`
+
+---
+
+## Problem Statement
+
+<div class="header"><div class="title">A. Gellyfish and Tricolor Pansy</div><div class="time-limit"><div class="property-title">time limit per test</div>1 second</div><div class="memory-limit"><div class="property-title">memory limit per test</div>256 megabytes</div><div class="input-file input-standard"><div class="property-title">input</div>standard input</div><div class="output-file output-standard"><div class="property-title">output</div>standard output</div></div><div><p>Gellyfish and Flower are playing a game called "Duel".</p><p>Gellyfish has $$$a$$$ HP, while Flower has $$$b$$$ HP.</p><p>Each of them has a knight. Gellyfish's knight has $$$c$$$ HP, while Flower's knight has $$$d$$$ HP.</p><p>They will play a game in rounds until one of the players wins. For $$$k = 1, 2, \ldots$$$ in this order, they will perform the following actions:</p><ul><li> If $$$k$$$ is odd and Gellyfish's knight is alive:<ul> <li> Gellyfish's knight can attack Flower and reduce $$$b$$$ by $$$1$$$. If $$$b \leq 0$$$, <span class="tex-font-style-bf">Gellyfish wins</span>. Or, </li><li> Gellyfish's knight can attack Flower's knight and reduce $$$d$$$ by $$$1$$$. If $$$d \leq 0$$$, Flower's knight dies. </li></ul></li><li> If $$$k$$$ is even and Flower's knight is alive:<ul> <li> Flower's knight can attack Gellyfish and reduce $$$a$$$ by $$$1$$$. If $$$a \leq 0$$$, <span class="tex-font-style-bf">Flower wins</span>. Or, </li><li> Flower's knight can attack Gellyfish's knight and reduce $$$c$$$ by $$$1$$$. If $$$c \leq 0$$$, Gellyfish's knight dies. </li></ul></li></ul><p>As one of the smartest people in the world, you want to tell them who will win before the game. Assume both players play optimally.</p><p>It can be proven that the game will never end in a draw. That is, one player has a strategy to end the game in a finite number of moves.</p></div><div class="input-specification"><div class="section-title">Input</div><p>Each test contains multiple test cases. The first line contains the number of test cases $$$t$$$ ($$$1 \le t \le 10^4$$$). The description of the test cases follows. </p><p>The first and only line of each test case contains four integers $$$a$$$, $$$b$$$, $$$c$$$, $$$d$$$ ($$$1 \leq a, b, c, d \leq 10^9$$$) — the HP of Gellyfish, the HP of Flower, the HP of Gellyfish's knight, and the HP of Flower's knight, respectively.</p></div><div class="output-specification"><div class="section-title">Output</div><p>For each test case, if Flower will win, output "Flower", otherwise output "Gellyfish".</p></div><div class="sample-tests"><div class="section-title">Example</div><div class="sample-test"><div class="input"><div class="title">Input<div title="Copy" data-clipboard-target="#id00461297112431164" id="id007378796838494005" class="input-output-copier">Copy</div></div><pre id="id00461297112431164"><div class="test-example-line test-example-line-even test-example-line-0">5</div><div class="test-example-line test-example-line-odd test-example-line-1">1 2 3 4</div><div class="test-example-line test-example-line-even test-example-line-2">100 999 1 1</div><div class="test-example-line test-example-line-odd test-example-line-3">10 20 10 30</div><div class="test-example-line test-example-line-even test-example-line-4">12 14 13 11</div><div class="test-example-line test-example-line-odd test-example-line-5">998 244 353 107</div></pre></div><div class="output"><div class="title">Output<div title="Copy" data-clipboard-target="#id0011421611618499561" id="id006703063694748367" class="input-output-copier">Copy</div></div><pre id="id0011421611618499561">Flower
+Gellyfish
+Flower
+Gellyfish
+Gellyfish
+</pre></div></div></div><div class="note"><div class="section-title">Note</div><p>In the first test case, Gellyfish has only $$$1$$$ HP. Therefore, no matter what Gellyfish does in the first round, Flower's knight will attack Gellyfish in the second round, allowing Flower to win.</p><p>In the second test case, Flower's knight has only $$$1$$$ HP. Gellyfish will attack Flower's knight in the first round. Then Flower's knight will no longer be able to attack, allowing Gellyfish to win.</p></div>
