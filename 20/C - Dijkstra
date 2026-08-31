@@ -1,17 +1,170 @@
-<h2><a href="https://codeforces.com/contest/20/problem/C" target="_blank" rel="noopener noreferrer">20C — Dijkstra?</a></h2>
-
-| | |
-|---|---|
-| **Difficulty** | 1900 |
-| **Language** | C++23 (GCC 14-64, msys2) |
-| **Verdict** | ✅ Accepted |
-| **Problem Link** | [Codeforces 20C](https://codeforces.com/contest/20/problem/C) |
-
-## Topics
-`graphs` `shortest paths`
-
----
-
-## Problem Statement
-
-<div class="header"><div class="title">C. Dijkstra?</div><div class="time-limit"><div class="property-title">time limit per test</div>1 second</div><div class="memory-limit"><div class="property-title">memory limit per test</div>64 megabytes</div><div class="input-file input-standard" style="font-weight: bold"><div class="property-title">input</div>stdin</div><div class="output-file output-standard" style="font-weight: bold"><div class="property-title">output</div>stdout</div></div><div><p>You are given a weighted undirected graph. The vertices are enumerated from 1 to <span class="tex-span"><i>n</i></span>. Your task is to find the shortest path between the vertex <span class="tex-span">1</span> and the vertex <span class="tex-span"><i>n</i></span>.</p></div><div class="input-specification"><div class="section-title">Input</div><p>The first line contains two integers <span class="tex-span"><i>n</i></span> and <span class="tex-span"><i>m</i></span> (<span class="tex-span">2 ≤ <i>n</i> ≤ 10<sup class="upper-index">5</sup>, 0 ≤ <i>m</i> ≤ 10<sup class="upper-index">5</sup></span>), where <span class="tex-span"><i>n</i></span> is the number of vertices and <span class="tex-span"><i>m</i></span> is the number of edges. Following <span class="tex-span"><i>m</i></span> lines contain one edge each in form <span class="tex-span"><i>a</i><sub class="lower-index"><i>i</i></sub></span>, <span class="tex-span"><i>b</i><sub class="lower-index"><i>i</i></sub></span> and <span class="tex-span"><i>w</i><sub class="lower-index"><i>i</i></sub></span> (<span class="tex-span">1 ≤ <i>a</i><sub class="lower-index"><i>i</i></sub>, <i>b</i><sub class="lower-index"><i>i</i></sub> ≤ <i>n</i>, 1 ≤ <i>w</i><sub class="lower-index"><i>i</i></sub> ≤ 10<sup class="upper-index">6</sup></span>), where <span class="tex-span"><i>a</i><sub class="lower-index"><i>i</i></sub>, <i>b</i><sub class="lower-index"><i>i</i></sub></span> are edge endpoints and <span class="tex-span"><i>w</i><sub class="lower-index"><i>i</i></sub></span> is the length of the edge.</p><p>It is possible that the graph has loops and multiple edges between pair of vertices.</p></div><div class="output-specification"><div class="section-title">Output</div><p>Write the only integer <span class="tex-font-style-tt">-1</span> in case of no path. Write the shortest path in opposite case. If there are many solutions, print any of them.</p></div><div class="sample-tests"><div class="section-title">Examples</div><div class="sample-test"><div class="input"><div class="title">Input<div title="Copy" data-clipboard-target="#id0020474416757081582" id="id0049552155396656794" class="input-output-copier">Copy</div></div><pre id="id0020474416757081582">5 6<br>1 2 2<br>2 5 5<br>2 3 4<br>1 4 1<br>4 3 3<br>3 5 1<br></pre></div><div class="output"><div class="title">Output<div title="Copy" data-clipboard-target="#id007268444122148731" id="id006907987050255493" class="input-output-copier">Copy</div></div><pre id="id007268444122148731">1 4 3 5 </pre></div><div class="input"><div class="title">Input<div title="Copy" data-clipboard-target="#id00738869278336574" id="id005750159198619706" class="input-output-copier">Copy</div></div><pre id="id00738869278336574">5 6<br>1 2 2<br>2 5 5<br>2 3 4<br>1 4 1<br>4 3 3<br>3 5 1<br></pre></div><div class="output"><div class="title">Output<div title="Copy" data-clipboard-target="#id005128575372049252" id="id008333780319303756" class="input-output-copier">Copy</div></div><pre id="id005128575372049252">1 4 3 5 </pre></div></div></div>
+#include <iostream>
+#include <vector>
+#include <algorithm>
+#include <cmath>
+#include <set>
+#include <map>
+#include <queue>
+#include <stack>
+#include <string>
+#include <cstring>
+#include <unordered_map>
+#include <unordered_set>
+#include <limits>
+#include <random>
+#include <iomanip>
+#include <numeric>
+#include <cassert>
+#include <bitset>
+#include <tuple>
+#include <deque>
+using namespace std;
+ 
+// Type aliases
+using ll    = long long;
+using pii   = pair<int, int>;
+using pll   = pair<ll, ll>;
+using vi    = vector<int>;
+using vll   = vector<ll>;
+using vpii  = vector<pii>;
+using vpll  = vector<pll>;
+using vvi   = vector<vi>;
+ 
+// Constants
+const int MOD    = 1e9 + 7;
+const int INF    = 1e9;
+const ll  LLINF  = 1e18;
+ 
+ 
+// Macros
+#define all(x)            (x).begin(), (x).end()
+#define len(x)            static_cast<int>((x).size())
+#define F                 first
+#define S                 second
+#define pb                push_back
+#define mpr               make_pair
+ 
+// Loop macros
+#define rep(i, a, b)      for (int i = (a); i <= (b); ++i)
+#define per(i, a, b)      for (int i = (b); i >= (a); --i)
+#define repl(i, a, b)     for (ll i = (a); i <= (b); ++i)
+#define perl(i, a, b)     for (ll i = (b); i >= (a); --i)
+ 
+// Fast Exponentiation
+ll mod_exp(ll base, ll exp, ll mod=MOD) {
+    ll result = 1;
+    base %= mod;
+    while (exp > 0) {
+        if (exp & 1) {
+            result = (result * base) % mod;
+        }
+        base = (base * base) % mod;
+        exp >>= 1;
+    }
+    return result;
+}
+// GCD and LCM
+ll gcd(ll a, ll b) {
+    while (b) {
+        a %= b;
+        swap(a, b);
+    }
+    return a;
+}
+ 
+ll lcm(ll a, ll b) {
+    return (a / gcd(a, b)) * b;
+}
+ 
+// sum of all elements in a vector
+template <typename T>
+T sum(const vector<T>& v) {
+    return accumulate(v.begin(), v.end(), T(0));
+}
+// sum of all elements in a 2d vector
+template <typename T>
+T sum(const vector<vector<T>>& v) {
+    T total = 0;
+    for (const auto& row : v) {
+        total += accumulate(row.begin(), row.end(), T(0));
+    }
+    return total;
+}
+// Print a vector
+template <typename T>
+void print(const vector<T>& v) {
+    for (const auto& elem : v) {
+        cout << elem << " ";
+    }
+    cout << endl;
+}
+ 
+// Print a 2D vector
+template <typename T>
+void print(const vector<vector<T>>& v) {
+    for (const auto& row : v) {
+        print(row);
+    }
+}
+ 
+// Print a pair
+template <typename T1, typename T2>
+void print(const pair<T1, T2>& p) {
+    cout << "(" << p.first << ", " << p.second << ")" << endl;
+}
+ 
+// Fast IO
+#define fast_io           ios::sync_with_stdio(false); cin.tie(nullptr)
+ 
+void solve() {
+    ll n,m;
+    cin >> n >> m;
+    vector<vpll> adj(n + 1);
+    for (ll i = 0; i < m; i++) {
+        ll u, v, w;
+        cin >> u >> v >> w;
+        adj[u].pb({v, w});
+        adj[v].pb({u, w});
+    }
+    priority_queue<pll, vector<pll>, greater<pll>> pq;
+    vll dist(n + 1, LLINF);
+    vll parent(n + 1, -1);
+    dist[1] = 0;
+    pq.push({0, 1});
+    while (!pq.empty()) {
+        auto [d, node] = pq.top();
+        pq.pop();
+        if (d > dist[node]) continue;
+        for (auto &[nbr, w] : adj[node]) {
+            if (dist[node] + w < dist[nbr]) {
+                dist[nbr] = dist[node] + w;
+                parent[nbr] = node;
+                pq.push({dist[nbr], nbr});
+            }
+        }
+    }
+    if (dist[n] == LLINF) {
+        cout << -1 << "
+";
+        return;
+    }
+    vector<ll> path;
+    ll curr = n;
+    while (curr != -1) {
+        path.pb(curr);
+        curr = parent[curr];
+    }
+    reverse(all(path));
+    print(path);
+ 
+}
+ 
+int main() {
+    fast_io;
+    int tc = 1;
+    // cin >> tc;
+    while (tc--) {
+        solve();
+    }
+    return 0;
+}
