@@ -1,0 +1,23 @@
+<h2><a href="https://codeforces.com/contest/2063/problem/A" target="_blank" rel="noopener noreferrer">2063A — Minimal Coprime</a></h2>
+
+| | |
+|---|---|
+| **Difficulty** | 800 |
+| **Language** | C++17 (GCC 7-32) |
+| **Verdict** | ✅ Accepted |
+| **Problem Link** | [Codeforces 2063A](https://codeforces.com/contest/2063/problem/A) |
+
+## Topics
+`math` `number theory`
+
+---
+
+## Problem Statement
+
+<div class="header"><div class="title">A. Minimal Coprime</div><div class="time-limit"><div class="property-title">time limit per test</div>1 second</div><div class="memory-limit"><div class="property-title">memory limit per test</div>256 megabytes</div><div class="input-file input-standard"><div class="property-title">input</div>standard input</div><div class="output-file output-standard"><div class="property-title">output</div>standard output</div></div><div><center> <span class="tex-font-size-small"><span class="tex-font-style-it">Today, Little John used all his savings to buy a segment. He wants to build a house on this segment.</span></span> </center><p>A segment of positive integers $$$[l,r]$$$ is called <span class="tex-font-style-it">coprime</span> if $$$l$$$ and $$$r$$$ are coprime$$$^{\text{∗}}$$$.</p><p>A coprime segment $$$[l,r]$$$ is called <span class="tex-font-style-it">minimal coprime</span> if it does not contain$$$^{\text{†}}$$$ any coprime segment not equal to itself. To better understand this statement, you can refer to the notes.</p><p>Given $$$[l,r]$$$, a segment of positive integers, find the number of minimal coprime segments contained in $$$[l,r]$$$.</p><div class="statement-footnote"><p>$$$^{\text{∗}}$$$Two integers $$$a$$$ and $$$b$$$ are coprime if they share only one positive common divisor. For example, the numbers $$$2$$$ and $$$4$$$ are not coprime because they are both divided by $$$2$$$ and $$$1$$$, but the numbers $$$7$$$ and $$$9$$$ are coprime because their only positive common divisor is $$$1$$$.</p><p>$$$^{\text{†}}$$$A segment $$$[l',r']$$$ is contained in the segment $$$[l,r]$$$ if and only if $$$l \le l' \le r' \le r$$$.</p></div></div><div class="input-specification"><div class="section-title">Input</div><p>Each test contains multiple test cases. The first line contains the number of test cases $$$t$$$ ($$$1 \le t \le 100$$$). The description of the test cases follows. </p><p>The only line of each test case consists of two integers $$$l$$$ and $$$r$$$ ($$$1 \le l \le r \le 10^9$$$).</p></div><div class="output-specification"><div class="section-title">Output</div><p>For each test case, output the number of minimal coprime segments contained in $$$[l,r]$$$, on a separate line.</p></div><div class="sample-tests"><div class="section-title">Example</div><div class="sample-test"><div class="input"><div class="title">Input<div title="Copy" data-clipboard-target="#id003857332976286666" id="id0018348708983510553" class="input-output-copier">Copy</div></div><pre id="id003857332976286666"><div class="test-example-line test-example-line-even test-example-line-0">6</div><div class="test-example-line test-example-line-odd test-example-line-1">1 2</div><div class="test-example-line test-example-line-even test-example-line-2">1 10</div><div class="test-example-line test-example-line-odd test-example-line-3">49 49</div><div class="test-example-line test-example-line-even test-example-line-4">69 420</div><div class="test-example-line test-example-line-odd test-example-line-5">1 1</div><div class="test-example-line test-example-line-even test-example-line-6">9982 44353</div></pre></div><div class="output"><div class="title">Output<div title="Copy" data-clipboard-target="#id002229623301618051" id="id007540212144764004" class="input-output-copier">Copy</div></div><pre id="id002229623301618051">1
+9
+0
+351
+1
+34371
+</pre></div></div></div><div class="note"><div class="section-title">Note</div><p>On the first test case, the given segment is $$$[1,2]$$$. The segments contained in $$$[1,2]$$$ are as follows.</p><ul> <li> $$$[1,1]$$$: This segment is coprime, since the numbers $$$1$$$ and $$$1$$$ are coprime, and this segment does not contain any other segment inside. Thus, $$$[1,1]$$$ is minimal coprime. </li><li> $$$[1,2]$$$: This segment is coprime. However, as it contains $$$[1,1]$$$, which is also coprime, $$$[1,2]$$$ is not minimal coprime. </li><li> $$$[2,2]$$$: This segment is not coprime because $$$2$$$ and $$$2$$$ share $$$2$$$ positive common divisors: $$$1$$$ and $$$2$$$. </li></ul><p>Therefore, the segment $$$[1,2]$$$ contains $$$1$$$ minimal coprime segment.</p></div>
