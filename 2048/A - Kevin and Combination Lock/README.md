@@ -1,0 +1,22 @@
+<h2><a href="https://codeforces.com/contest/2048/problem/A" target="_blank" rel="noopener noreferrer">2048A — Kevin and Combination Lock</a></h2>
+
+| | |
+|---|---|
+| **Difficulty** | 800 |
+| **Language** | C++17 (GCC 7-32) |
+| **Verdict** | ✅ Accepted |
+| **Problem Link** | [Codeforces 2048A](https://codeforces.com/contest/2048/problem/A) |
+
+## Topics
+`brute force` `greedy` `implementation` `math` `number theory`
+
+---
+
+## Problem Statement
+
+<div class="header"><div class="title">A. Kevin and Combination Lock</div><div class="time-limit"><div class="property-title">time limit per test</div>1 second</div><div class="memory-limit"><div class="property-title">memory limit per test</div>256 megabytes</div><div class="input-file input-standard"><div class="property-title">input</div>standard input</div><div class="output-file output-standard"><div class="property-title">output</div>standard output</div></div><div><p>Kevin is trapped in Lakeside Village by Grace. At the exit of the village, there is a combination lock that can only be unlocked if Kevin solves it.</p><p>The combination lock starts with an integer $$$ x $$$. Kevin can perform one of the following two operations zero or more times: </p><ol> <li> If $$$ x \neq 33 $$$, he can select two consecutive digits $$$ 3 $$$ from $$$ x $$$ and remove them simultaneously. For example, if $$$ x = 13\,323 $$$, he can remove the second and third $$$ 3 $$$, changing $$$ x $$$ to $$$ 123 $$$. </li><li> If $$$ x \geq 33 $$$, he can change $$$ x $$$ to $$$ x - 33 $$$. For example, if $$$ x = 99 $$$, he can choose this operation to change $$$ x $$$ to $$$ 99 - 33 = 66 $$$. </li></ol><p>When the value of $$$ x $$$ on the combination lock becomes $$$ 0 $$$, Kevin can unlock the lock and escape from Lakeside Village. Please determine whether it is possible for Kevin to unlock the combination lock and escape.</p></div><div class="input-specification"><div class="section-title">Input</div><p>Each test contains multiple test cases. The first line contains the number of test cases $$$t$$$ ($$$1 \le t \le 10^4$$$).</p><p>The only line of each test case contains a positive integer $$$x$$$ ($$$1\leq x\leq 10^9$$$).</p></div><div class="output-specification"><div class="section-title">Output</div><p>For each test case, output <span class="tex-font-style-tt">"YES"</span> or <span class="tex-font-style-tt">"NO"</span> (without quotes) in one line, representing whether Kevin can unlock the combination lock and escape. You can output the answer in any case (upper or lower). For example, the strings "<span class="tex-font-style-tt">yEs</span>", "<span class="tex-font-style-tt">yes</span>", "<span class="tex-font-style-tt">Yes</span>", and "<span class="tex-font-style-tt">YES</span>" will be recognized as positive responses.</p></div><div class="sample-tests"><div class="section-title">Example</div><div class="sample-test"><div class="input"><div class="title">Input<div title="Copy" data-clipboard-target="#id00739128673221717" id="id0013964251377906534" class="input-output-copier">Copy</div></div><pre id="id00739128673221717"><div class="test-example-line test-example-line-even test-example-line-0">5</div><div class="test-example-line test-example-line-odd test-example-line-1">165</div><div class="test-example-line test-example-line-even test-example-line-2">6369</div><div class="test-example-line test-example-line-odd test-example-line-3">666</div><div class="test-example-line test-example-line-even test-example-line-4">114514</div><div class="test-example-line test-example-line-odd test-example-line-5">133333332</div></pre></div><div class="output"><div class="title">Output<div title="Copy" data-clipboard-target="#id008556361356445797" id="id0040020157739594187" class="input-output-copier">Copy</div></div><pre id="id008556361356445797">YES
+YES
+NO
+NO
+YES
+</pre></div></div></div><div class="note"><div class="section-title">Note</div><p>For the first test case, $$$165\xrightarrow{-33}132\xrightarrow{-33}99\xrightarrow{-33}66\xrightarrow{-33}33\xrightarrow{-33}0$$$.</p><p>For the second test case, $$$6369\xrightarrow{-33}6{\color{red}{33}}6\xrightarrow{\text{remove "33"}}66\xrightarrow{-33}33\xrightarrow{-33}0$$$.</p><p>For the third test case, it can be proven that, regardless of the operations performed, $$$666$$$ cannot be transformed into $$$0$$$.</p></div>
