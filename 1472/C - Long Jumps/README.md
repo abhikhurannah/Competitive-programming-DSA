@@ -1,0 +1,30 @@
+<h2><a href="https://codeforces.com/contest/1472/problem/C" target="_blank" rel="noopener noreferrer">1472C — Long Jumps</a></h2>
+
+| | |
+|---|---|
+| **Difficulty** | 1100 |
+| **Language** | C++23 (GCC 14-64, msys2) |
+| **Verdict** | ✅ Accepted |
+| **Problem Link** | [Codeforces 1472C](https://codeforces.com/contest/1472/problem/C) |
+
+## Topics
+`dp` `graphs`
+
+---
+
+## Problem Statement
+
+<div class="header"><div class="title">C. Long Jumps</div><div class="time-limit"><div class="property-title">time limit per test</div>2 seconds</div><div class="memory-limit"><div class="property-title">memory limit per test</div>256 megabytes</div><div class="input-file input-standard"><div class="property-title">input</div>standard input</div><div class="output-file output-standard"><div class="property-title">output</div>standard output</div></div><div><p>Polycarp found under the Christmas tree an array $$$a$$$ of $$$n$$$ elements and instructions for playing with it: </p><ul> <li> At first, choose index $$$i$$$ ($$$1 \leq i \leq n$$$) — starting position in the array. Put the chip at the index $$$i$$$ (on the value $$$a_i$$$). </li><li> While $$$i \leq n$$$, add $$$a_i$$$ to your score and move the chip $$$a_i$$$ positions to the right (i.e. replace $$$i$$$ with $$$i + a_i$$$). </li><li> If $$$i  \gt  n$$$, then Polycarp ends the game. </li></ul><p>For example, if $$$n = 5$$$ and $$$a = [7, 3, 1, 2, 3]$$$, then the following game options are possible: </p><ul> <li> Polycarp chooses $$$i = 1$$$. Game process: $$$i = 1 \overset{+7}{\longrightarrow} 8$$$. The score of the game is: $$$a_1 = 7$$$. </li><li> Polycarp chooses $$$i = 2$$$. Game process: $$$i = 2 \overset{+3}{\longrightarrow} 5 \overset{+3}{\longrightarrow} 8$$$. The score of the game is: $$$a_2 + a_5 = 6$$$. </li><li> Polycarp chooses $$$i = 3$$$. Game process: $$$i = 3 \overset{+1}{\longrightarrow} 4 \overset{+2}{\longrightarrow} 6$$$. The score of the game is: $$$a_3 + a_4 = 3$$$. </li><li> Polycarp chooses $$$i = 4$$$. Game process: $$$i = 4 \overset{+2}{\longrightarrow} 6$$$. The score of the game is: $$$a_4 = 2$$$. </li><li> Polycarp chooses $$$i = 5$$$. Game process: $$$i = 5 \overset{+3}{\longrightarrow} 8$$$. The score of the game is: $$$a_5 = 3$$$. </li></ul><p>Help Polycarp to find out the maximum score he can get if he chooses the starting index in an optimal way.</p></div><div class="input-specification"><div class="section-title">Input</div><p>The first line contains one integer $$$t$$$ ($$$1 \leq t \leq 10^4$$$) — the number of test cases. Then $$$t$$$ test cases follow.</p><p>The first line of each test case contains one integer $$$n$$$ ($$$1 \leq n \leq 2 \cdot 10^5$$$) — the length of the array $$$a$$$.</p><p>The next line contains $$$n$$$ integers $$$a_1, a_2, \dots, a_n$$$ ($$$1 \leq a_i \leq 10^9$$$) — elements of the array $$$a$$$.</p><p>It is guaranteed that the sum of $$$n$$$ over all test cases does not exceed $$$2 \cdot 10^5$$$.</p></div><div class="output-specification"><div class="section-title">Output</div><p>For each test case, output on a separate line one number — the maximum score that Polycarp can get by playing the game on the corresponding array according to the instruction from the statement. Note that Polycarp chooses any starting position from $$$1$$$ to $$$n$$$ in such a way as to maximize his result.</p></div><div class="sample-tests"><div class="section-title">Example</div><div class="sample-test"><div class="input"><div class="title">Input<div title="Copy" data-clipboard-target="#id005736020361779604" id="id007386731980237842" class="input-output-copier">Copy</div></div><pre id="id005736020361779604">4
+5
+7 3 1 2 3
+3
+2 1 4
+6
+2 1000 2 3 995 1
+5
+1 1 1 1 1
+</pre></div><div class="output"><div class="title">Output<div title="Copy" data-clipboard-target="#id0048205038108143006" id="id008448232042500667" class="input-output-copier">Copy</div></div><pre id="id0048205038108143006">7
+6
+1000
+5
+</pre></div></div></div><div class="note"><div class="section-title">Note</div><p>The first test case is explained in the statement.</p><p>In the second test case, the maximum score can be achieved by choosing $$$i = 1$$$.</p><p>In the third test case, the maximum score can be achieved by choosing $$$i = 2$$$.</p><p>In the fourth test case, the maximum score can be achieved by choosing $$$i = 1$$$.</p></div>
