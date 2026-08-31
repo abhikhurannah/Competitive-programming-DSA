@@ -1,0 +1,17 @@
+<h2><a href="https://codeforces.com/contest/797/problem/C" target="_blank" rel="noopener noreferrer">797C — Minimal string</a></h2>
+
+| | |
+|---|---|
+| **Difficulty** | 1700 |
+| **Language** | C++23 (GCC 14-64, msys2) |
+| **Verdict** | ✅ Accepted |
+| **Problem Link** | [Codeforces 797C](https://codeforces.com/contest/797/problem/C) |
+
+## Topics
+`data structures` `greedy` `strings`
+
+---
+
+## Problem Statement
+
+<div class="header"><div class="title">C. Minimal string</div><div class="time-limit"><div class="property-title">time limit per test</div>1 second</div><div class="memory-limit"><div class="property-title">memory limit per test</div>256 megabytes</div><div class="input-file input-standard"><div class="property-title">input</div>standard input</div><div class="output-file output-standard"><div class="property-title">output</div>standard output</div></div><div><p>Petya recieved a gift of a string <span class="tex-span"><i>s</i></span> with length up to <span class="tex-span">10<sup class="upper-index">5</sup></span> characters for his birthday. He took two more empty strings <span class="tex-span"><i>t</i></span> and <span class="tex-span"><i>u</i></span> and decided to play a game. This game has two possible moves:</p><ul> <li> Extract the <span class="tex-font-style-bf">first</span> character of <span class="tex-span"><i>s</i></span> and append <span class="tex-span"><i>t</i></span> with this character. </li><li> Extract the <span class="tex-font-style-bf">last</span> character of <span class="tex-span"><i>t</i></span> and append <span class="tex-span"><i>u</i></span> with this character. </li></ul><p>Petya wants to get strings <span class="tex-span"><i>s</i></span> and <span class="tex-span"><i>t</i></span> empty and string <span class="tex-span"><i>u</i></span> lexicographically minimal.</p><p>You should write a program that will help Petya win the game.</p></div><div class="input-specification"><div class="section-title">Input</div><p>First line contains non-empty string <span class="tex-span"><i>s</i></span> (<span class="tex-span">1 ≤ |<i>s</i>| ≤ 10<sup class="upper-index">5</sup></span>), consisting of lowercase English letters.</p></div><div class="output-specification"><div class="section-title">Output</div><p>Print resulting string <span class="tex-span"><i>u</i></span>.</p></div><div class="sample-tests"><div class="section-title">Examples</div><div class="sample-test"><div class="input"><div class="title">Input<div title="Copy" data-clipboard-target="#id004237827617783898" id="id0016702845729195426" class="input-output-copier">Copy</div></div><pre id="id004237827617783898">cab<br></pre></div><div class="output"><div class="title">Output<div title="Copy" data-clipboard-target="#id002089074408484708" id="id0029268497843478924" class="input-output-copier">Copy</div></div><pre id="id002089074408484708">abc<br></pre></div><div class="input"><div class="title">Input<div title="Copy" data-clipboard-target="#id009629695749204935" id="id0018952119683038027" class="input-output-copier">Copy</div></div><pre id="id009629695749204935">acdb<br></pre></div><div class="output"><div class="title">Output<div title="Copy" data-clipboard-target="#id0006794618029689992" id="id009765909912078228" class="input-output-copier">Copy</div></div><pre id="id0006794618029689992">abdc<br></pre></div></div></div>
