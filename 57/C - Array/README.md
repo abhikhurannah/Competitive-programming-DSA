@@ -1,0 +1,17 @@
+<h2><a href="https://codeforces.com/contest/57/problem/C" target="_blank" rel="noopener noreferrer">57C — Array</a></h2>
+
+| | |
+|---|---|
+| **Difficulty** | 1900 |
+| **Language** | C++23 (GCC 14-64, msys2) |
+| **Verdict** | ✅ Accepted |
+| **Problem Link** | [Codeforces 57C](https://codeforces.com/contest/57/problem/C) |
+
+## Topics
+`combinatorics` `math`
+
+---
+
+## Problem Statement
+
+<div class="header"><div class="title">C. Array</div><div class="time-limit"><div class="property-title">time limit per test</div>2 seconds</div><div class="memory-limit"><div class="property-title">memory limit per test</div>256 megabytes</div><div class="input-file input-standard" style="font-weight: bold"><div class="property-title">input</div>stdin</div><div class="output-file output-standard" style="font-weight: bold"><div class="property-title">output</div>stdout</div></div><div><p>Chris the Rabbit has been interested in arrays ever since he was a child. At the moment he is researching arrays with the length of <span class="tex-span"><i>n</i></span>, containing only integers from <span class="tex-span">1</span> to <span class="tex-span"><i>n</i></span>. He is not good at math, that's why some simple things drive him crazy. For example, yesterday he grew keen on counting how many different beautiful arrays there are. Chris thinks that an array is beautiful if it meets one of the two conditions: </p><ul> <li> each elements, starting from the second one, is no more than the preceding one </li><li> each element, starting from the second one, is no less than the preceding one </li></ul><p>Having got absolutely mad at himself and at math, Chris came to Stewie and Brian to ask them for help. However, they only laughed at him and said that the answer is too simple and not interesting. Help Chris the Rabbit to find the answer at last.</p></div><div class="input-specification"><div class="section-title">Input</div><p>The single line contains an integer <span class="tex-span"><i>n</i></span> which is the size of the array (<span class="tex-span">1 ≤ <i>n</i> ≤ 10<sup class="upper-index">5</sup></span>).</p></div><div class="output-specification"><div class="section-title">Output</div><p>You must print the answer on a single line. As it can be rather long, you should print it modulo <span class="tex-span">1000000007</span>.</p></div><div class="sample-tests"><div class="section-title">Examples</div><div class="sample-test"><div class="input"><div class="title">Input<div title="Copy" data-clipboard-target="#id003324677768260085" id="id003865699448183322" class="input-output-copier">Copy</div></div><pre id="id003324677768260085">2<br></pre></div><div class="output"><div class="title">Output<div title="Copy" data-clipboard-target="#id009533830048365398" id="id0033558266772982936" class="input-output-copier">Copy</div></div><pre id="id009533830048365398">4<br></pre></div><div class="input"><div class="title">Input<div title="Copy" data-clipboard-target="#id00707073240669411" id="id00857779212334217" class="input-output-copier">Copy</div></div><pre id="id00707073240669411">3<br></pre></div><div class="output"><div class="title">Output<div title="Copy" data-clipboard-target="#id003959171027129219" id="id00226262528151975" class="input-output-copier">Copy</div></div><pre id="id003959171027129219">17<br></pre></div></div></div>
