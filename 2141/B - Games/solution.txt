@@ -1,0 +1,86 @@
+import java.io.BufferedInputStream
+ 
+class FastScanner {
+    private val input = BufferedInputStream(System.`in`)
+    private val buffer = ByteArray(1 shl 16)
+    private var len = 0
+    private var ptr = 0
+ 
+    private fun readByte(): Int {
+        if (ptr >= len) {
+            len = input.read(buffer)
+            ptr = 0
+            if (len <= 0) return -1
+        }
+        return buffer[ptr++].toInt()
+    }
+ 
+    fun nextInt(): Int {
+        var c = readByte()
+ 
+        while (c <= 32) {
+            c = readByte()
+        }
+ 
+        var sign = 1
+        if (c == '-'.code) {
+            sign = -1
+            c = readByte()
+        }
+ 
+        var res = 0
+        while (c > 32) {
+            res = res * 10 + (c - '0'.code)
+            c = readByte()
+        }
+ 
+        return res * sign
+    }
+}
+ 
+fun solve(fs: FastScanner) {
+    val n = fs.nextInt()
+    val m = fs.nextInt()
+ 
+    val s1 = HashSet<Int>()
+    val s2 = HashSet<Int>()
+ 
+    repeat(n) {
+        s1.add(fs.nextInt())
+    }
+ 
+    repeat(m) {
+        s2.add(fs.nextInt())
+    }
+ 
+    var common = 0L
+ 
+    for (x in s1) {
+        if (s2.contains(x)) {
+            common++
+        }
+    }
+ 
+    val alice = s1.size.toLong() - common
+    val bob = s2.size.toLong() - common
+ 
+    var ans = 1L
+ 
+    if (alice > bob) {
+        ans += bob * 2 + 1
+    } else {
+        ans += alice * 2
+    }
+ 
+    println(ans)
+}
+ 
+fun main() {
+    val fs = FastScanner()
+ 
+    val tc = fs.nextInt()
+ 
+    repeat(tc) {
+        solve(fs)
+    }
+}
