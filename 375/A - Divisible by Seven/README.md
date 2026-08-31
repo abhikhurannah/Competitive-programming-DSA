@@ -1,0 +1,17 @@
+<h2><a href="https://codeforces.com/contest/375/problem/A" target="_blank" rel="noopener noreferrer">375A — Divisible by Seven</a></h2>
+
+| | |
+|---|---|
+| **Difficulty** | 1600 |
+| **Language** | C++23 (GCC 14-64, msys2) |
+| **Verdict** | ✅ Accepted |
+| **Problem Link** | [Codeforces 375A](https://codeforces.com/contest/375/problem/A) |
+
+## Topics
+`math` `number theory`
+
+---
+
+## Problem Statement
+
+<div class="header"><div class="title">A. Divisible by Seven</div><div class="time-limit"><div class="property-title">time limit per test</div>1 second</div><div class="memory-limit"><div class="property-title">memory limit per test</div>256 megabytes</div><div class="input-file input-standard" style="font-weight: bold"><div class="property-title">input</div>stdin</div><div class="output-file output-standard" style="font-weight: bold"><div class="property-title">output</div>stdout</div></div><div><p>You have number <span class="tex-span"><i>a</i></span>, whose decimal representation quite luckily contains digits 1, 6, 8, 9. Rearrange the digits in its decimal representation so that the resulting number will be divisible by 7.</p><p>Number <span class="tex-span"><i>a</i></span> doesn't contain any leading zeroes and contains digits 1, 6, 8, 9 (it also can contain another digits). The resulting number also mustn't contain any leading zeroes.</p></div><div class="input-specification"><div class="section-title">Input</div><p>The first line contains positive integer <span class="tex-span"><i>a</i></span> in the decimal record. It is guaranteed that the record of number <span class="tex-span"><i>a</i></span> contains digits: 1, 6, 8, 9. Number <span class="tex-span"><i>a</i></span> doesn't contain any leading zeroes. The decimal representation of number <span class="tex-span"><i>a</i></span> contains at least <span class="tex-span">4</span> and at most <span class="tex-span">10<sup class="upper-index">6</sup></span> characters.</p></div><div class="output-specification"><div class="section-title">Output</div><p>Print a number in the decimal notation without leading zeroes — the result of the permutation.</p><p>If it is impossible to rearrange the digits of the number <span class="tex-span"><i>a</i></span> in the required manner, print 0.</p></div><div class="sample-tests"><div class="section-title">Examples</div><div class="sample-test"><div class="input"><div class="title">Input<div title="Copy" data-clipboard-target="#id006737346713536047" id="id0042355968118915177" class="input-output-copier">Copy</div></div><pre id="id006737346713536047">1689<br></pre></div><div class="output"><div class="title">Output<div title="Copy" data-clipboard-target="#id008207745174997806" id="id0024947819934578075" class="input-output-copier">Copy</div></div><pre id="id008207745174997806">1869<br></pre></div><div class="input"><div class="title">Input<div title="Copy" data-clipboard-target="#id0024500903321411838" id="id0018445485828032826" class="input-output-copier">Copy</div></div><pre id="id0024500903321411838">18906<br></pre></div><div class="output"><div class="title">Output<div title="Copy" data-clipboard-target="#id00205307530776911" id="id005205890090586576" class="input-output-copier">Copy</div></div><pre id="id00205307530776911">18690<br></pre></div></div></div>
