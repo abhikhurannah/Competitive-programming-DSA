@@ -1,0 +1,23 @@
+<h2><a href="https://codeforces.com/contest/2071/problem/B" target="_blank" rel="noopener noreferrer">2071B — Perfecto</a></h2>
+
+| | |
+|---|---|
+| **Difficulty** | 1100 |
+| **Language** | C++17 (GCC 7-32) |
+| **Verdict** | ✅ Accepted |
+| **Problem Link** | [Codeforces 2071B](https://codeforces.com/contest/2071/problem/B) |
+
+## Topics
+`brute force` `constructive algorithms` `greedy` `math`
+
+---
+
+## Problem Statement
+
+<div class="header"><div class="title">B. Perfecto</div><div class="time-limit"><div class="property-title">time limit per test</div>1.5 seconds</div><div class="memory-limit"><div class="property-title">memory limit per test</div>256 megabytes</div><div class="input-file input-standard"><div class="property-title">input</div>standard input</div><div class="output-file output-standard"><div class="property-title">output</div>standard output</div></div><div><p>  </p><p>A permutation $$$p$$$ of length $$$n$$$$$$^{\text{∗}}$$$ is <span class="tex-font-style-it">perfect</span> if, for each index $$$i$$$ ($$$1 \le i \le n$$$), it satisfies the following:</p><ul> <li> The sum of the first $$$i$$$ elements $$$p_1 + p_2 + \ldots + p_i$$$ is <span class="tex-font-style-bf">not</span> a perfect square$$$^{\text{†}}$$$. </li></ul><p>You would like things to be perfect. Given a positive integer $$$n$$$, find a <span class="tex-font-style-it">perfect</span> permutation of length $$$n$$$, or print $$$-1$$$ if none exists.</p><div class="statement-footnote"><p>$$$^{\text{∗}}$$$A permutation of length $$$n$$$ is an array consisting of $$$n$$$ distinct integers from $$$1$$$ to $$$n$$$ in arbitrary order. For example, $$$[2,3,1,5,4]$$$ is a permutation, but $$$[1,2,2]$$$ is not a permutation ($$$2$$$ appears twice in the array), and $$$[1,3,4]$$$ is also not a permutation ($$$n=3$$$ but there is $$$4$$$ in the array). </p><p>$$$^{\text{†}}$$$A perfect square is an integer that is the square of an integer, e.g., $$$9=3^2$$$ is a perfect square, but $$$8$$$ and $$$14$$$ are not.</p></div></div><div class="input-specification"><div class="section-title">Input</div><p>Each test contains multiple test cases. The first line contains the number of test cases $$$t$$$ ($$$1 \le t \le 10^4$$$). The description of the test cases follows. </p><p>The first and only line of each test case contains a single integer $$$n$$$ ($$$1 \le n \le 5 \cdot 10^5$$$).</p><p>It is guaranteed that the sum of $$$n$$$ over all test cases does not exceed $$$10^6$$$. </p></div><div class="output-specification"><div class="section-title">Output</div><p>For each test case:</p><ul> <li> If no solution exists, print a single integer $$$-1$$$. </li><li> Otherwise, print $$$n$$$ integers $$$p_1,p_2,\ldots,p_n$$$ — the <span class="tex-font-style-it">perfect</span> permutation you find. </li></ul><p>If there are multiple solutions, print any of them.</p></div><div class="sample-tests"><div class="section-title">Example</div><div class="sample-test"><div class="input"><div class="title">Input<div title="Copy" data-clipboard-target="#id006589714101697811" id="id008149405472985556" class="input-output-copier">Copy</div></div><pre id="id006589714101697811">3
+1
+4
+5
+</pre></div><div class="output"><div class="title">Output<div title="Copy" data-clipboard-target="#id0031772642322297595" id="id003286288160250892" class="input-output-copier">Copy</div></div><pre id="id0031772642322297595">-1
+2 4 1 3
+5 1 4 3 2</pre></div></div></div><div class="note"><div class="section-title">Note</div><p>In the first test case, there is only one permutation with length $$$n = 1$$$ that is $$$p = [1]$$$, which is not <span class="tex-font-style-it">perfect</span>:</p><ul> <li> $$$p_1 = 1 = x^2$$$ for $$$x = 1$$$. </li></ul><p>In the second test case, one possible <span class="tex-font-style-it">perfect</span> permutation with length $$$n = 4$$$ is $$$p = [2, 4, 1, 3]$$$:</p><ul> <li> $$$p_1 = 2 \neq x^2$$$; </li><li> $$$p_1 + p_2 = 2 + 4 = 6 \neq x^2$$$; </li><li> $$$p_1 + p_2 + p_3 = 2 + 4 + 1 = 7 \neq x^2$$$; </li><li> $$$p_1 + p_2 + p_3 + p_4 = 2 + 4 + 1 + 3 = 10 \neq x^2$$$. </li></ul><p>In the third test case, one possible <span class="tex-font-style-it">perfect</span> permutation with length $$$n = 5$$$ is $$$p = [5, 1, 4, 3, 2]$$$:</p><ul> <li> $$$p_1 = 5 \neq x^2$$$; </li><li> $$$p_1 + p_2 = 5 + 1 = 6 \neq x^2$$$; </li><li> $$$p_1 + p_2 + p_3 = 5 + 1 + 4 = 10 \neq x^2$$$; </li><li> $$$p_1 + p_2 + p_3 + p_4 = 5 + 1 + 4 + 3 = 13 \neq x^2$$$; </li><li> $$$p_1 + p_2 + p_3 + p_4 + p_5 = 5 + 1 + 4 + 3 + 2 = 15 \neq x^2$$$. </li></ul></div>
