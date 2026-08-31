@@ -1,0 +1,25 @@
+<h2><a href="https://codeforces.com/contest/1920/problem/C" target="_blank" rel="noopener noreferrer">1920C — Partitioning the Array</a></h2>
+
+| | |
+|---|---|
+| **Difficulty** | 1600 |
+| **Language** | C++23 (GCC 14-64, msys2) |
+| **Verdict** | ✅ Accepted |
+| **Problem Link** | [Codeforces 1920C](https://codeforces.com/contest/1920/problem/C) |
+
+## Topics
+`brute force` `math` `number theory`
+
+---
+
+## Problem Statement
+
+<div class="header"><div class="title">C. Partitioning the Array</div><div class="time-limit"><div class="property-title">time limit per test</div>3 seconds</div><div class="memory-limit"><div class="property-title">memory limit per test</div>256 megabytes</div><div class="input-file input-standard"><div class="property-title">input</div>standard input</div><div class="output-file output-standard"><div class="property-title">output</div>standard output</div></div><div><p>Allen has an array $$$a_1, a_2,\ldots,a_n$$$. For every positive integer $$$k$$$ that is a divisor of $$$n$$$, Allen does the following:</p><ul> <li> He partitions the array into $$$\frac{n}{k}$$$ disjoint subarrays of length $$$k$$$. In other words, he partitions the array into the following subarrays: $$$$$$[a_1,a_2,\ldots,a_k],[a_{k+1}, a_{k+2},\ldots,a_{2k}],\ldots,[a_{n-k+1},a_{n-k+2},\ldots,a_{n}]$$$$$$ </li><li> Allen earns one point if there exists some positive integer $$$m$$$ ($$$m \geq 2$$$) such that if he replaces every element in the array with its remainder when divided by $$$m$$$, then all subarrays will be identical. </li></ul><p>Help Allen find the number of points he will earn.</p></div><div class="input-specification"><div class="section-title">Input</div><p>Each test consists of multiple test cases. The first line contains a single integer $$$t$$$ ($$$1 \leq t \leq 10^4$$$) — the number of test cases. The description of the test cases follows.</p><p>The first line of each test case contains a single integer $$$n$$$ ($$$1 \leq n \leq 2\cdot10^5$$$) — the length of the array $$$a$$$.</p><p>The second line of each test case contains $$$n$$$ integers $$$a_1, a_2,\ldots, a_n$$$ ($$$1 \leq a_i \leq n$$$) — the elements of the array $$$a$$$.</p><p>It is guaranteed that the sum of $$$n$$$ over all test cases does not exceed $$$2 \cdot 10^5$$$. </p></div><div class="output-specification"><div class="section-title">Output</div><p>For each test case, output a single integer — the number of points Allen will earn.</p></div><div class="sample-tests"><div class="section-title">Example</div><div class="sample-test"><div class="input"><div class="title">Input<div title="Copy" data-clipboard-target="#id0015344015040459047" id="id0048596366758087994" class="input-output-copier">Copy</div></div><pre id="id0015344015040459047"><div class="test-example-line test-example-line-even test-example-line-0">8</div><div class="test-example-line test-example-line-odd test-example-line-1">4</div><div class="test-example-line test-example-line-odd test-example-line-1">1 2 1 4</div><div class="test-example-line test-example-line-even test-example-line-2">3</div><div class="test-example-line test-example-line-even test-example-line-2">1 2 3</div><div class="test-example-line test-example-line-odd test-example-line-3">5</div><div class="test-example-line test-example-line-odd test-example-line-3">1 1 1 1 1</div><div class="test-example-line test-example-line-even test-example-line-4">6</div><div class="test-example-line test-example-line-even test-example-line-4">1 3 1 1 3 1</div><div class="test-example-line test-example-line-odd test-example-line-5">6</div><div class="test-example-line test-example-line-odd test-example-line-5">6 2 6 2 2 2</div><div class="test-example-line test-example-line-even test-example-line-6">6</div><div class="test-example-line test-example-line-even test-example-line-6">2 6 3 6 6 6</div><div class="test-example-line test-example-line-odd test-example-line-7">10</div><div class="test-example-line test-example-line-odd test-example-line-7">1 7 5 1 4 3 1 3 1 4</div><div class="test-example-line test-example-line-even test-example-line-8">1</div><div class="test-example-line test-example-line-even test-example-line-8">1</div></pre></div><div class="output"><div class="title">Output<div title="Copy" data-clipboard-target="#id0005836104278908272" id="id0021489948466319042" class="input-output-copier">Copy</div></div><pre id="id0005836104278908272">2
+1
+2
+4
+4
+1
+2
+1
+</pre></div></div></div><div class="note"><div class="section-title">Note</div><p>In the first test case, $$$k=2$$$ earns a point since Allen can pick $$$m = 2$$$ and both subarrays will be equal to $$$[1, 0]$$$. $$$k=4$$$ also earns a point, since no matter what $$$m$$$ Allen chooses, there will be only one subarray and thus all subarrays are equal.</p><p>In the second test case, Allen earns $$$1$$$ point for $$$k=3$$$, where his choice for $$$m$$$ does not matter.</p></div>
