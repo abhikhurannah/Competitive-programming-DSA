@@ -1,0 +1,22 @@
+<h2><a href="https://codeforces.com/contest/1826/problem/C" target="_blank" rel="noopener noreferrer">1826C — Dreaming of Freedom</a></h2>
+
+| | |
+|---|---|
+| **Difficulty** | 1300 |
+| **Language** | C++23 (GCC 14-64, msys2) |
+| **Verdict** | ✅ Accepted |
+| **Problem Link** | [Codeforces 1826C](https://codeforces.com/contest/1826/problem/C) |
+
+## Topics
+`greedy` `math` `number theory`
+
+---
+
+## Problem Statement
+
+<div class="header"><div class="title">C. Dreaming of Freedom</div><div class="time-limit"><div class="property-title">time limit per test</div>2.5 seconds</div><div class="memory-limit"><div class="property-title">memory limit per test</div>256 megabytes</div><div class="input-file input-standard"><div class="property-title">input</div>standard input</div><div class="output-file output-standard"><div class="property-title">output</div>standard output</div></div><div><div class="epigraph"><div class="epigraph-text"><span class="tex-font-style-it">Because to take away a man's freedom of choice, even his freedom to make the wrong choice, is to manipulate him as though he were a puppet and not a person.</span></div><div class="epigraph-source">— Madeleine L'Engle</div></div><p>There are $$$n$$$ programmers choosing their favorite algorithm amongst $$$m$$$ different choice options. Before the first round, all $$$m$$$ options are available. In each round, every programmer makes a vote for one of the remaining algorithms. After the round, only the algorithms with the maximum number of votes remain. The voting process ends when there is only one option left. Determine whether the voting process can continue indefinitely or no matter how people vote, they will eventually choose a single option after some finite amount of rounds?</p></div><div class="input-specification"><div class="section-title">Input</div><p>The first line contains a single integer $$$t$$$ ($$$1 \leq t \leq 10^5$$$) — the number of test cases.</p><p>Each test case consists of a single line containing two integers $$$n$$$ and $$$m$$$ ($$$1 \leq n, m \leq 10^6$$$) — the number of people and choice options respectively.</p></div><div class="output-specification"><div class="section-title">Output</div><p>For each test case output "<span class="tex-font-style-tt">YES</span>" if the programmers will eventually choose a single option, and "<span class="tex-font-style-tt">NO</span>" otherwise.</p><p>You may print each letter in any case (for example, <span class="tex-font-style-tt">YES</span>, <span class="tex-font-style-tt">Yes</span>, <span class="tex-font-style-tt">yes</span>, <span class="tex-font-style-tt">yEs</span> will all be recognized as a positive answer).</p></div><div class="sample-tests"><div class="section-title">Example</div><div class="sample-test"><div class="input"><div class="title">Input<div title="Copy" data-clipboard-target="#id006166061893323584" id="id00285772457225271" class="input-output-copier">Copy</div></div><pre id="id006166061893323584"><div class="test-example-line test-example-line-even test-example-line-0">5</div><div class="test-example-line test-example-line-odd test-example-line-1">3 2</div><div class="test-example-line test-example-line-even test-example-line-2">4 2</div><div class="test-example-line test-example-line-odd test-example-line-3">5 3</div><div class="test-example-line test-example-line-even test-example-line-4">1000000 1000000</div><div class="test-example-line test-example-line-odd test-example-line-5">1 1000000</div></pre></div><div class="output"><div class="title">Output<div title="Copy" data-clipboard-target="#id007969269543324854" id="id001404003067237819" class="input-output-copier">Copy</div></div><pre id="id007969269543324854">YES
+NO
+YES
+NO
+YES
+</pre></div></div></div><div class="note"><div class="section-title">Note</div><p>In the first example, there are $$$8$$$ ways people could vote: $$$\{1|1|1, 1|1|2, 1|2|1, 1|2|2, 2|1|1, 2|1|2, 2|2|1, 2|2|2\}$$$.</p><p>In cases $$$1$$$, $$$2$$$, $$$3$$$, and $$$5$$$, the programmers are left with the first algorithm, and in the remaining cases people are left with the second one, so the voting ends in one round in any case.</p><p>In the second example, the programmers could always vote $$$1|1|2|2$$$. Both algorithms have the maximum number of votes and remain for the next round, so the voting never ends.</p></div>
