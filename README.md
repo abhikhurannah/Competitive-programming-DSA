@@ -6,7 +6,7 @@
 
 | Total Problems | Topics |
 |---|---|
-| 239 | 25 |
+| 254 | 28 |
 
 ---
 
@@ -14,29 +14,32 @@
 
 - [Uncategorized](#uncategorized) (1)
 - [binary search](#binary-search) (22)
-- [bitmasks](#bitmasks) (15)
-- [brute force](#brute-force) (46)
-- [combinatorics](#combinatorics) (8)
-- [constructive algorithms](#constructive-algorithms) (51)
-- [data structures](#data-structures) (22)
+- [bitmasks](#bitmasks) (17)
+- [brute force](#brute-force) (48)
+- [combinatorics](#combinatorics) (13)
+- [constructive algorithms](#constructive-algorithms) (52)
+- [data structures](#data-structures) (26)
 - [dfs and similar](#dfs-and-similar) (4)
-- [dp](#dp) (21)
+- [divide and conquer](#divide-and-conquer) (1)
+- [dp](#dp) (26)
 - [dsu](#dsu) (1)
 - [flows](#flows) (1)
 - [games](#games) (5)
-- [geometry](#geometry) (6)
-- [graphs](#graphs) (2)
-- [greedy](#greedy) (118)
+- [geometry](#geometry) (7)
+- [graphs](#graphs) (3)
+- [greedy](#greedy) (124)
 - [hashing](#hashing) (1)
-- [implementation](#implementation) (45)
-- [math](#math) (115)
-- [number theory](#number-theory) (35)
+- [implementation](#implementation) (46)
+- [interactive](#interactive) (1)
+- [math](#math) (123)
+- [matrices](#matrices) (1)
+- [number theory](#number-theory) (37)
 - [schedules](#schedules) (1)
 - [shortest paths](#shortest-paths) (1)
-- [sortings](#sortings) (42)
+- [sortings](#sortings) (49)
 - [strings](#strings) (21)
 - [trees](#trees) (4)
-- [two pointers](#two-pointers) (26)
+- [two pointers](#two-pointers) (28)
 
 ---
 
@@ -77,8 +80,10 @@
 
 | # | Problem | Difficulty | Solution |
 |---|---------|------------|----------|
+| 1362C | [Johnny and Another Rating Drop](https://codeforces.com/contest/1362/problem/C) | 1400 | [C++23 (GCC 14-64, msys2)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1362/C%20-%20Johnny%20and%20Another%20Rating%20Drop/solution.cpp) |
 | 1420B | [Rock and Lever](https://codeforces.com/contest/1420/problem/B) | 1200 | [C++17 (GCC 7-32)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1420/B%20-%20Rock%20and%20Lever/solution.cpp) |
 | 1498B | [Box Fitting](https://codeforces.com/contest/1498/problem/B) | 1300 | [C++17 (GCC 7-32)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1498/B%20-%20Box%20Fitting/solution.cpp) |
+| 1513B | [AND Sequences](https://codeforces.com/contest/1513/problem/B) | 1400 | [C++23 (GCC 14-64, msys2)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1513/B%20-%20AND%20Sequences/solution.cpp) |
 | 1514B | [AND 0, Sum Big](https://codeforces.com/contest/1514/problem/B) | 1200 | [C++17 (GCC 7-32)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1514/B%20-%20AND%200%2C%20Sum%20Big/solution.cpp) |
 | 1559A | [Mocha and Math](https://codeforces.com/contest/1559/problem/A) | 900 | [C++17 (GCC 7-32)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1559/A%20-%20Mocha%20and%20Math/solution.cpp) |
 | 1567B | [MEXor Mixup](https://codeforces.com/contest/1567/problem/B) | 1000 | [C++17 (GCC 7-32)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1567/B%20-%20MEXor%20Mixup/solution.cpp) |
@@ -98,10 +103,12 @@
 | # | Problem | Difficulty | Solution |
 |---|---------|------------|----------|
 | 550A | [Two Substrings](https://codeforces.com/contest/550/problem/A) | 1500 | [C++17 (GCC 7-32)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/550/A%20-%20Two%20Substrings/solution.cpp) |
+| 1167B | [Lost Numbers](https://codeforces.com/contest/1167/problem/B) | 1400 | [C++23 (GCC 14-64, msys2)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1167/B%20-%20Lost%20Numbers/solution.cpp) |
 | 1380A | [Three Indices](https://codeforces.com/contest/1380/problem/A) | 900 | [C++17 (GCC 7-32)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1380/A%20-%20Three%20Indices/solution.cpp) |
 | 1411B | [Fair Numbers](https://codeforces.com/contest/1411/problem/B) | 1000 | [C++17 (GCC 7-32)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1411/B%20-%20Fair%20Numbers/solution.cpp) |
 | 1485A | [Add and Divide](https://codeforces.com/contest/1485/problem/A) | 1000 | [C++17 (GCC 7-32)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1485/A%20-%20Add%20and%20Divide/solution.cpp) |
 | 1506C | [Double-ended Strings](https://codeforces.com/contest/1506/problem/C) | 1000 | [C++17 (GCC 7-32)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1506/C%20-%20Double-ended%20Strings/solution.cpp) |
+| 1519C | [Berland Regional](https://codeforces.com/contest/1519/problem/C) | 1400 | [C++23 (GCC 14-64, msys2)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1519/C%20-%20Berland%20Regional/solution.cpp) |
 | 1541B | [Pleasant Pairs](https://codeforces.com/contest/1541/problem/B) | 1200 | [C++17 (GCC 7-32)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1541/B%20-%20Pleasant%20Pairs/solution.cpp) |
 | 1582C | [Grandma Capa Knits a Scarf](https://codeforces.com/contest/1582/problem/C) | 1200 | [C++17 (GCC 7-32)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1582/C%20-%20Grandma%20Capa%20Knits%20a%20Scarf/solution.cpp) |
 | 1594C | [Make Them Equal](https://codeforces.com/contest/1594/problem/C) | 1200 | [C++17 (GCC 7-32)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1594/C%20-%20Make%20Them%20Equal/solution.cpp) |
@@ -148,8 +155,13 @@
 
 | # | Problem | Difficulty | Solution |
 |---|---------|------------|----------|
+| 414B | [Mashmokh and ACM](https://codeforces.com/contest/414/problem/B) | 1400 | [C++23 (GCC 14-64, msys2)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/414/B%20-%20Mashmokh%20and%20ACM/solution.cpp) |
+| 1215B | [The Number of Products](https://codeforces.com/contest/1215/problem/B) | 1400 | [C++23 (GCC 14-64, msys2)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1215/B%20-%20The%20Number%20of%20Products/solution.cpp) |
+| 1475C | [Ball in Berland](https://codeforces.com/contest/1475/problem/C) | 1400 | [C++23 (GCC 14-64, msys2)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1475/C%20-%20Ball%20in%20Berland/solution.cpp) |
+| 1513B | [AND Sequences](https://codeforces.com/contest/1513/problem/B) | 1400 | [C++23 (GCC 14-64, msys2)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1513/B%20-%20AND%20Sequences/solution.cpp) |
 | 1514B | [AND 0, Sum Big](https://codeforces.com/contest/1514/problem/B) | 1200 | [C++17 (GCC 7-32)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1514/B%20-%20AND%200%2C%20Sum%20Big/solution.cpp) |
 | 1582B | [Luntik and Subsequences](https://codeforces.com/contest/1582/problem/B) | 900 | [C++17 (GCC 7-32)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1582/B%20-%20Luntik%20and%20Subsequences/solution.cpp) |
+| 1648A | [Weird Sum](https://codeforces.com/contest/1648/problem/A) | 1400 | [C++23 (GCC 14-64, msys2)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1648/A%20-%20Weird%20Sum/solution.cpp) |
 | 1827A | [Counting Orders](https://codeforces.com/contest/1827/problem/A) | 1100 | [C++17 (GCC 7-32)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1827/A%20-%20Counting%20Orders/solution.cpp) |
 | 1840C | [Ski Resort](https://codeforces.com/contest/1840/problem/C) | 1000 | [C++17 (GCC 7-32)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1840/C%20-%20Ski%20Resort/solution.cpp) |
 | 1855B | [Longest Divisors Interval](https://codeforces.com/contest/1855/problem/B) | 900 | [C++17 (GCC 7-32)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1855/B%20-%20Longest%20Divisors%20Interval/solution.cpp) |
@@ -167,6 +179,7 @@
 | 1474B | [Different Divisors](https://codeforces.com/contest/1474/problem/B) | 1000 | [C++17 (GCC 7-32)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1474/B%20-%20Different%20Divisors/solution.cpp) |
 | 1497B | [M-arrays](https://codeforces.com/contest/1497/problem/B) | 1200 | [C++17 (GCC 7-32)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1497/B%20-%20M-arrays/solution.cpp) |
 | 1504B | [Flip the Bits](https://codeforces.com/contest/1504/problem/B) | 1200 | [C++17 (GCC 7-32)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1504/B%20-%20Flip%20the%20Bits/solution.cpp) |
+| 1513B | [AND Sequences](https://codeforces.com/contest/1513/problem/B) | 1400 | [C++23 (GCC 14-64, msys2)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1513/B%20-%20AND%20Sequences/solution.cpp) |
 | 1537B | [Bad Boy](https://codeforces.com/contest/1537/problem/B) | 900 | [C++17 (GCC 7-32)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1537/B%20-%20Bad%20Boy/solution.cpp) |
 | 1559A | [Mocha and Math](https://codeforces.com/contest/1559/problem/A) | 900 | [C++17 (GCC 7-32)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1559/A%20-%20Mocha%20and%20Math/solution.cpp) |
 | 1614B | [Divan and a New Project ](https://codeforces.com/contest/1614/problem/B) | 1000 | [C++17 (GCC 7-32)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1614/B%20-%20Divan%20and%20a%20New%20Project%20/solution.cpp) |
@@ -221,13 +234,17 @@
 | 380C | [Sereja and Brackets](https://codeforces.com/contest/380/problem/C) | 2000 | [C++17 (GCC 7-32)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/380/C%20-%20Sereja%20and%20Brackets/solution.cpp) |
 | 808B | [Average Sleep Time](https://codeforces.com/contest/808/problem/B) | 1300 | [C++17 (GCC 7-32)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/808/B%20-%20Average%20Sleep%20Time/solution.cpp) |
 | 1237B | [Balanced Tunnel](https://codeforces.com/contest/1237/problem/B) | 1300 | [C++17 (GCC 7-32)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1237/B%20-%20Balanced%20Tunnel/solution.cpp) |
+| 1320A | [Journey Planning](https://codeforces.com/contest/1320/problem/A) | 1400 | [C++23 (GCC 14-64, msys2)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1320/A%20-%20Journey%20Planning/solution.cpp) |
 | 1380A | [Three Indices](https://codeforces.com/contest/1380/problem/A) | 900 | [C++17 (GCC 7-32)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1380/A%20-%20Three%20Indices/solution.cpp) |
 | 1438B | [Valerii Against Everyone](https://codeforces.com/contest/1438/problem/B) | 1000 | [C++17 (GCC 7-32)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1438/B%20-%20Valerii%20Against%20Everyone/solution.cpp) |
 | 1498B | [Box Fitting](https://codeforces.com/contest/1498/problem/B) | 1300 | [C++17 (GCC 7-32)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1498/B%20-%20Box%20Fitting/solution.cpp) |
+| 1519C | [Berland Regional](https://codeforces.com/contest/1519/problem/C) | 1400 | [C++23 (GCC 14-64, msys2)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1519/C%20-%20Berland%20Regional/solution.cpp) |
 | 1582C | [Grandma Capa Knits a Scarf](https://codeforces.com/contest/1582/problem/C) | 1200 | [C++17 (GCC 7-32)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1582/C%20-%20Grandma%20Capa%20Knits%20a%20Scarf/solution.cpp) |
+| 1648A | [Weird Sum](https://codeforces.com/contest/1648/problem/A) | 1400 | [C++23 (GCC 14-64, msys2)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1648/A%20-%20Weird%20Sum/solution.cpp) |
 | 1656B | [Subtract Operation](https://codeforces.com/contest/1656/problem/B) | 1100 | [C++17 (GCC 7-32)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1656/B%20-%20Subtract%20Operation/solution.cpp) |
 | 1669F | [Eating Candies](https://codeforces.com/contest/1669/problem/F) | 1100 | [C++17 (GCC 7-32)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1669/F%20-%20Eating%20Candies/solution.cpp) |
 | 1679B | [Stone Age Problem](https://codeforces.com/contest/1679/problem/B) | 1200 | [C++17 (GCC 7-32)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1679/B%20-%20Stone%20Age%20Problem/solution.cpp) |
+| 1692G | [2^Sort](https://codeforces.com/contest/1692/problem/G) | 1400 | [C++23 (GCC 14-64, msys2)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1692/G%20-%202%5ESort/solution.cpp) |
 | 1703F | [Yet Another Problem About Pairs Satisfying an Inequality](https://codeforces.com/contest/1703/problem/F) | 1300 | [C++17 (GCC 7-32)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1703/F%20-%20Yet%20Another%20Problem%20About%20Pairs%20Satisfying%20an%20Inequality/solution.cpp) |
 | 1793C | [Dora and Search](https://codeforces.com/contest/1793/problem/C) | 1200 | [C++17 (GCC 7-32)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1793/C%20-%20Dora%20and%20Search/solution.cpp) |
 | 1807D | [Odd Queries](https://codeforces.com/contest/1807/problem/D) | 900 | [C++17 (GCC 7-32)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1807/D%20-%20Odd%20Queries/solution.cpp) |
@@ -249,18 +266,29 @@
 | 1676G | [White-Black Balanced Subtrees](https://codeforces.com/contest/1676/problem/G) | 1300 | [C++17 (GCC 7-32)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1676/G%20-%20White-Black%20Balanced%20Subtrees/solution.cpp) |
 | 1830A | [Copil Copac Draws Trees](https://codeforces.com/contest/1830/problem/A) | 1400 | [C++17 (GCC 7-32)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1830/A%20-%20Copil%20Copac%20Draws%20Trees/solution.cpp) |
 
+### divide and conquer
+
+| # | Problem | Difficulty | Solution |
+|---|---------|------------|----------|
+| 1167B | [Lost Numbers](https://codeforces.com/contest/1167/problem/B) | 1400 | [C++23 (GCC 14-64, msys2)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1167/B%20-%20Lost%20Numbers/solution.cpp) |
+
 ### dp
 
 | # | Problem | Difficulty | Solution |
 |---|---------|------------|----------|
+| 414B | [Mashmokh and ACM](https://codeforces.com/contest/414/problem/B) | 1400 | [C++23 (GCC 14-64, msys2)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/414/B%20-%20Mashmokh%20and%20ACM/solution.cpp) |
 | 550A | [Two Substrings](https://codeforces.com/contest/550/problem/A) | 1500 | [C++17 (GCC 7-32)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/550/A%20-%20Two%20Substrings/solution.cpp) |
 | 665C | [Simple Strings](https://codeforces.com/contest/665/problem/C) | 1300 | [C++17 (GCC 7-32)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/665/C%20-%20Simple%20Strings/solution.cpp) |
 | 1178B | [WOW Factor](https://codeforces.com/contest/1178/problem/B) | 1300 | [C++17 (GCC 7-32)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1178/B%20-%20WOW%20Factor/solution.cpp) |
+| 1195C | [Basketball Exercise](https://codeforces.com/contest/1195/problem/C) | 1400 | [C++23 (GCC 14-64, msys2)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1195/C%20-%20Basketball%20Exercise/solution.cpp) |
+| 1215B | [The Number of Products](https://codeforces.com/contest/1215/problem/B) | 1400 | [C++23 (GCC 14-64, msys2)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1215/B%20-%20The%20Number%20of%20Products/solution.cpp) |
+| 1320A | [Journey Planning](https://codeforces.com/contest/1320/problem/A) | 1400 | [C++23 (GCC 14-64, msys2)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1320/A%20-%20Journey%20Planning/solution.cpp) |
 | 1459B | [Move and Turn](https://codeforces.com/contest/1459/problem/B) | 1300 | [C++17 (GCC 7-32)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1459/B%20-%20Move%20and%20Turn/solution.cpp) |
 | 1470A | [Strange Birthday Party](https://codeforces.com/contest/1470/problem/A) | 1300 | [C++17 (GCC 7-32)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1470/A%20-%20Strange%20Birthday%20Party/solution.cpp) |
 | 1593B | [Make it Divisible by 25](https://codeforces.com/contest/1593/problem/B) | 900 | [C++17 (GCC 7-32)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1593/B%20-%20Make%20it%20Divisible%20by%2025/solution.cpp) |
 | 1631B | [Fun with Even Subarrays](https://codeforces.com/contest/1631/problem/B) | 1100 | [C++17 (GCC 7-32)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1631/B%20-%20Fun%20with%20Even%20Subarrays/solution.cpp) |
 | 1676G | [White-Black Balanced Subtrees](https://codeforces.com/contest/1676/problem/G) | 1300 | [C++17 (GCC 7-32)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1676/G%20-%20White-Black%20Balanced%20Subtrees/solution.cpp) |
+| 1692G | [2^Sort](https://codeforces.com/contest/1692/problem/G) | 1400 | [C++23 (GCC 14-64, msys2)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1692/G%20-%202%5ESort/solution.cpp) |
 | 1703F | [Yet Another Problem About Pairs Satisfying an Inequality](https://codeforces.com/contest/1703/problem/F) | 1300 | [C++17 (GCC 7-32)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1703/F%20-%20Yet%20Another%20Problem%20About%20Pairs%20Satisfying%20an%20Inequality/solution.cpp) |
 | 1771B | [Hossam and Friends](https://codeforces.com/contest/1771/problem/B) | 1400 | [C++17 (GCC 7-32)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1771/B%20-%20Hossam%20and%20Friends/solution.cpp) |
 | 1791E | [Negatives and Positives](https://codeforces.com/contest/1791/problem/E) | 1100 | [C++17 (GCC 7-32)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1791/E%20-%20Negatives%20and%20Positives/solution.cpp) |
@@ -302,6 +330,7 @@
 | # | Problem | Difficulty | Solution |
 |---|---------|------------|----------|
 | 1620B | [Triangles on a Rectangle](https://codeforces.com/contest/1620/problem/B) | 1000 | [C++17 (GCC 7-32)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1620/B%20-%20Triangles%20on%20a%20Rectangle/solution.cpp) |
+| 1648A | [Weird Sum](https://codeforces.com/contest/1648/problem/A) | 1400 | [C++23 (GCC 14-64, msys2)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1648/A%20-%20Weird%20Sum/solution.cpp) |
 | 1806A | [Walking Master](https://codeforces.com/contest/1806/problem/A) | 800 | [C++17 (GCC 7-32)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1806/A%20-%20Walking%20Master/solution.cpp) |
 | 1869B | [2D Traveling](https://codeforces.com/contest/1869/problem/B) | 1100 | [C++17 (GCC 7-32)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1869/B%20-%202D%20Traveling/solution.cpp) |
 | 2074A | [Draw a Square](https://codeforces.com/contest/2074/problem/A) | 800 | [C++17 (GCC 7-32)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/2074/A%20-%20Draw%20a%20Square/solution.cpp) |
@@ -312,6 +341,7 @@
 
 | # | Problem | Difficulty | Solution |
 |---|---------|------------|----------|
+| 1475C | [Ball in Berland](https://codeforces.com/contest/1475/problem/C) | 1400 | [C++23 (GCC 14-64, msys2)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1475/C%20-%20Ball%20in%20Berland/solution.cpp) |
 | 1676G | [White-Black Balanced Subtrees](https://codeforces.com/contest/1676/problem/G) | 1300 | [C++17 (GCC 7-32)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1676/G%20-%20White-Black%20Balanced%20Subtrees/solution.cpp) |
 | 1830A | [Copil Copac Draws Trees](https://codeforces.com/contest/1830/problem/A) | 1400 | [C++17 (GCC 7-32)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1830/A%20-%20Copil%20Copac%20Draws%20Trees/solution.cpp) |
 
@@ -321,8 +351,12 @@
 |---|---------|------------|----------|
 | 550A | [Two Substrings](https://codeforces.com/contest/550/problem/A) | 1500 | [C++17 (GCC 7-32)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/550/A%20-%20Two%20Substrings/solution.cpp) |
 | 665C | [Simple Strings](https://codeforces.com/contest/665/problem/C) | 1300 | [C++17 (GCC 7-32)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/665/C%20-%20Simple%20Strings/solution.cpp) |
+| 1110B | [Tape](https://codeforces.com/contest/1110/problem/B) | 1400 | [C++23 (GCC 14-64, msys2)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1110/B%20-%20Tape/solution.cpp) |
 | 1119B | [Alyona and a Narrow Fridge](https://codeforces.com/contest/1119/problem/B) | 1300 | [C++17 (GCC 7-32)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1119/B%20-%20Alyona%20and%20a%20Narrow%20Fridge/solution.cpp) |
+| 1183D | [Candy Box (easy version)](https://codeforces.com/contest/1183/problem/D) | 1400 | [C++23 (GCC 14-64, msys2)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1183/D%20-%20Candy%20Box%20(easy%20version)/solution.cpp) |
 | 1294C | [Product of Three Numbers](https://codeforces.com/contest/1294/problem/C) | 1300 | [C++17 (GCC 7-32)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1294/C%20-%20Product%20of%20Three%20Numbers/solution.cpp) |
+| 1320A | [Journey Planning](https://codeforces.com/contest/1320/problem/A) | 1400 | [C++23 (GCC 14-64, msys2)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1320/A%20-%20Journey%20Planning/solution.cpp) |
+| 1362C | [Johnny and Another Rating Drop](https://codeforces.com/contest/1362/problem/C) | 1400 | [C++23 (GCC 14-64, msys2)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1362/C%20-%20Johnny%20and%20Another%20Rating%20Drop/solution.cpp) |
 | 1364B | [Most socially-distanced subsequence](https://codeforces.com/contest/1364/problem/B) | 1300 | [C++17 (GCC 7-32)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1364/B%20-%20Most%20socially-distanced%20subsequence/solution.cpp) |
 | 1372B | [Omkar and Last Class of Math](https://codeforces.com/contest/1372/problem/B) | 1300 | [C++17 (GCC 7-32)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1372/B%20-%20Omkar%20and%20Last%20Class%20of%20Math/solution.cpp) |
 | 1374C | [Move Brackets](https://codeforces.com/contest/1374/problem/C) | 1000 | [C++17 (GCC 7-32)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1374/C%20-%20Move%20Brackets/solution.cpp) |
@@ -336,6 +370,8 @@
 | 1497B | [M-arrays](https://codeforces.com/contest/1497/problem/B) | 1200 | [C++17 (GCC 7-32)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1497/B%20-%20M-arrays/solution.cpp) |
 | 1498B | [Box Fitting](https://codeforces.com/contest/1498/problem/B) | 1300 | [C++17 (GCC 7-32)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1498/B%20-%20Box%20Fitting/solution.cpp) |
 | 1504B | [Flip the Bits](https://codeforces.com/contest/1504/problem/B) | 1200 | [C++17 (GCC 7-32)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1504/B%20-%20Flip%20the%20Bits/solution.cpp) |
+| 1519C | [Berland Regional](https://codeforces.com/contest/1519/problem/C) | 1400 | [C++23 (GCC 14-64, msys2)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1519/C%20-%20Berland%20Regional/solution.cpp) |
+| 1520E | [Arranging The Sheep](https://codeforces.com/contest/1520/problem/E) | 1400 | [C++23 (GCC 14-64, msys2)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1520/E%20-%20Arranging%20The%20Sheep/solution.cpp) |
 | 1537B | [Bad Boy](https://codeforces.com/contest/1537/problem/B) | 900 | [C++17 (GCC 7-32)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1537/B%20-%20Bad%20Boy/solution.cpp) |
 | 1539C | [Stable Groups](https://codeforces.com/contest/1539/problem/C) | 1200 | [C++17 (GCC 7-32)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1539/C%20-%20Stable%20Groups/solution.cpp) |
 | 1543A | [Exciting Bets](https://codeforces.com/contest/1543/problem/A) | 900 | [C++17 (GCC 7-32)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1543/A%20-%20Exciting%20Bets/solution.cpp) |
@@ -451,6 +487,7 @@
 | 550A | [Two Substrings](https://codeforces.com/contest/550/problem/A) | 1500 | [C++17 (GCC 7-32)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/550/A%20-%20Two%20Substrings/solution.cpp) |
 | 808B | [Average Sleep Time](https://codeforces.com/contest/808/problem/B) | 1300 | [C++17 (GCC 7-32)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/808/B%20-%20Average%20Sleep%20Time/solution.cpp) |
 | 1155A | [Reverse a Substring](https://codeforces.com/contest/1155/problem/A) | 1000 | [C++17 (GCC 7-32)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1155/A%20-%20Reverse%20a%20Substring/solution.cpp) |
+| 1215B | [The Number of Products](https://codeforces.com/contest/1215/problem/B) | 1400 | [C++23 (GCC 14-64, msys2)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1215/B%20-%20The%20Number%20of%20Products/solution.cpp) |
 | 1362A | [Johnny and Ancient Computer](https://codeforces.com/contest/1362/problem/A) | 1000 | [C++17 (GCC 7-32)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1362/A%20-%20Johnny%20and%20Ancient%20Computer/solution.cpp) |
 | 1504B | [Flip the Bits](https://codeforces.com/contest/1504/problem/B) | 1200 | [C++17 (GCC 7-32)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1504/B%20-%20Flip%20the%20Bits/solution.cpp) |
 | 1506C | [Double-ended Strings](https://codeforces.com/contest/1506/problem/C) | 1000 | [C++17 (GCC 7-32)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1506/C%20-%20Double-ended%20Strings/solution.cpp) |
@@ -494,16 +531,26 @@
 | 2137C | [Maximum Even Sum](https://codeforces.com/contest/2137/problem/C) | 1100 | [C++17 (GCC 7-32)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/2137/C%20-%20Maximum%20Even%20Sum/solution.cpp) |
 | 2145B | [Deck of Cards](https://codeforces.com/contest/2145/problem/B) | 1000 | [C++17 (GCC 7-32)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/2145/B%20-%20Deck%20of%20Cards/solution.cpp) |
 
+### interactive
+
+| # | Problem | Difficulty | Solution |
+|---|---------|------------|----------|
+| 1167B | [Lost Numbers](https://codeforces.com/contest/1167/problem/B) | 1400 | [C++23 (GCC 14-64, msys2)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1167/B%20-%20Lost%20Numbers/solution.cpp) |
+
 ### math
 
 | # | Problem | Difficulty | Solution |
 |---|---------|------------|----------|
 | 808B | [Average Sleep Time](https://codeforces.com/contest/808/problem/B) | 1300 | [C++17 (GCC 7-32)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/808/B%20-%20Average%20Sleep%20Time/solution.cpp) |
+| 1167B | [Lost Numbers](https://codeforces.com/contest/1167/problem/B) | 1400 | [C++23 (GCC 14-64, msys2)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1167/B%20-%20Lost%20Numbers/solution.cpp) |
 | 1294C | [Product of Three Numbers](https://codeforces.com/contest/1294/problem/C) | 1300 | [C++17 (GCC 7-32)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1294/C%20-%20Product%20of%20Three%20Numbers/solution.cpp) |
+| 1320A | [Journey Planning](https://codeforces.com/contest/1320/problem/A) | 1400 | [C++23 (GCC 14-64, msys2)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1320/A%20-%20Journey%20Planning/solution.cpp) |
 | 1360D | [Buying Shovels](https://codeforces.com/contest/1360/problem/D) | 1300 | [C++17 (GCC 7-32)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1360/D%20-%20Buying%20Shovels/solution.cpp) |
+| 1362C | [Johnny and Another Rating Drop](https://codeforces.com/contest/1362/problem/C) | 1400 | [C++23 (GCC 14-64, msys2)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1362/C%20-%20Johnny%20and%20Another%20Rating%20Drop/solution.cpp) |
 | 1366B | [Shuffle](https://codeforces.com/contest/1366/problem/B) | 1300 | [C++17 (GCC 7-32)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1366/B%20-%20Shuffle/solution.cpp) |
 | 1372B | [Omkar and Last Class of Math](https://codeforces.com/contest/1372/problem/B) | 1300 | [C++17 (GCC 7-32)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1372/B%20-%20Omkar%20and%20Last%20Class%20of%20Math/solution.cpp) |
 | 1374B | [Multiply by 2, divide by 6](https://codeforces.com/contest/1374/problem/B) | 900 | [C++17 (GCC 7-32)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1374/B%20-%20Multiply%20by%202%2C%20divide%20by%206/solution.cpp) |
+| 1374D | [Zero Remainder Array](https://codeforces.com/contest/1374/problem/D) | 1400 | [C++23 (GCC 14-64, msys2)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1374/D%20-%20Zero%20Remainder%20Array/solution.cpp) |
 | 1418A | [Buying Torches](https://codeforces.com/contest/1418/problem/A) | 1000 | [C++17 (GCC 7-32)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1418/A%20-%20Buying%20Torches/solution.cpp) |
 | 1420B | [Rock and Lever](https://codeforces.com/contest/1420/problem/B) | 1200 | [C++17 (GCC 7-32)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1420/B%20-%20Rock%20and%20Lever/solution.cpp) |
 | 1440B | [Sum of Medians](https://codeforces.com/contest/1440/problem/B) | 900 | [C++17 (GCC 7-32)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1440/B%20-%20Sum%20of%20Medians/solution.cpp) |
@@ -511,11 +558,14 @@
 | 1459B | [Move and Turn](https://codeforces.com/contest/1459/problem/B) | 1300 | [C++17 (GCC 7-32)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1459/B%20-%20Move%20and%20Turn/solution.cpp) |
 | 1471A | [Strange Partition](https://codeforces.com/contest/1471/problem/A) | 900 | [C++17 (GCC 7-32)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1471/A%20-%20Strange%20Partition/solution.cpp) |
 | 1474B | [Different Divisors](https://codeforces.com/contest/1474/problem/B) | 1000 | [C++17 (GCC 7-32)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1474/B%20-%20Different%20Divisors/solution.cpp) |
+| 1475C | [Ball in Berland](https://codeforces.com/contest/1475/problem/C) | 1400 | [C++23 (GCC 14-64, msys2)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1475/C%20-%20Ball%20in%20Berland/solution.cpp) |
 | 1485A | [Add and Divide](https://codeforces.com/contest/1485/problem/A) | 1000 | [C++17 (GCC 7-32)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1485/A%20-%20Add%20and%20Divide/solution.cpp) |
 | 1487B | [Cat Cycle](https://codeforces.com/contest/1487/problem/B) | 1200 | [C++17 (GCC 7-32)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1487/B%20-%20Cat%20Cycle/solution.cpp) |
 | 1497B | [M-arrays](https://codeforces.com/contest/1497/problem/B) | 1200 | [C++17 (GCC 7-32)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1497/B%20-%20M-arrays/solution.cpp) |
 | 1504B | [Flip the Bits](https://codeforces.com/contest/1504/problem/B) | 1200 | [C++17 (GCC 7-32)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1504/B%20-%20Flip%20the%20Bits/solution.cpp) |
+| 1513B | [AND Sequences](https://codeforces.com/contest/1513/problem/B) | 1400 | [C++23 (GCC 14-64, msys2)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1513/B%20-%20AND%20Sequences/solution.cpp) |
 | 1514B | [AND 0, Sum Big](https://codeforces.com/contest/1514/problem/B) | 1200 | [C++17 (GCC 7-32)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1514/B%20-%20AND%200%2C%20Sum%20Big/solution.cpp) |
+| 1520E | [Arranging The Sheep](https://codeforces.com/contest/1520/problem/E) | 1400 | [C++23 (GCC 14-64, msys2)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1520/E%20-%20Arranging%20The%20Sheep/solution.cpp) |
 | 1537B | [Bad Boy](https://codeforces.com/contest/1537/problem/B) | 900 | [C++17 (GCC 7-32)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1537/B%20-%20Bad%20Boy/solution.cpp) |
 | 1541B | [Pleasant Pairs](https://codeforces.com/contest/1541/problem/B) | 1200 | [C++17 (GCC 7-32)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1541/B%20-%20Pleasant%20Pairs/solution.cpp) |
 | 1543A | [Exciting Bets](https://codeforces.com/contest/1543/problem/A) | 900 | [C++17 (GCC 7-32)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1543/A%20-%20Exciting%20Bets/solution.cpp) |
@@ -529,6 +579,7 @@
 | 1618C | [Paint the Array](https://codeforces.com/contest/1618/problem/C) | 1100 | [C++17 (GCC 7-32)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1618/C%20-%20Paint%20the%20Array/solution.cpp) |
 | 1620B | [Triangles on a Rectangle](https://codeforces.com/contest/1620/problem/B) | 1000 | [C++17 (GCC 7-32)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1620/B%20-%20Triangles%20on%20a%20Rectangle/solution.cpp) |
 | 1624B | [Make AP](https://codeforces.com/contest/1624/problem/B) | 900 | [C++17 (GCC 7-32)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1624/B%20-%20Make%20AP/solution.cpp) |
+| 1648A | [Weird Sum](https://codeforces.com/contest/1648/problem/A) | 1400 | [C++23 (GCC 14-64, msys2)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1648/A%20-%20Weird%20Sum/solution.cpp) |
 | 1656B | [Subtract Operation](https://codeforces.com/contest/1656/problem/B) | 1100 | [C++17 (GCC 7-32)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1656/B%20-%20Subtract%20Operation/solution.cpp) |
 | 1659A | [Red Versus Blue](https://codeforces.com/contest/1659/problem/A) | 1000 | [C++17 (GCC 7-32)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1659/A%20-%20Red%20Versus%20Blue/solution.cpp) |
 | 1669H | [Maximal AND](https://codeforces.com/contest/1669/problem/H) | 1300 | [C++17 (GCC 7-32)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1669/H%20-%20Maximal%20AND/solution.cpp) |
@@ -614,10 +665,17 @@
 | 2148C | [Pacer](https://codeforces.com/contest/2148/problem/C) | 900 | [C++17 (GCC 7-32)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/2148/C%20-%20Pacer/solution.cpp) |
 | 2149A | [Be Positive](https://codeforces.com/contest/2149/problem/A) | 800 | [C++17 (GCC 7-32)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/2149/A%20-%20Be%20Positive/solution.cpp) |
 
+### matrices
+
+| # | Problem | Difficulty | Solution |
+|---|---------|------------|----------|
+| 1648A | [Weird Sum](https://codeforces.com/contest/1648/problem/A) | 1400 | [C++23 (GCC 14-64, msys2)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1648/A%20-%20Weird%20Sum/solution.cpp) |
+
 ### number theory
 
 | # | Problem | Difficulty | Solution |
 |---|---------|------------|----------|
+| 414B | [Mashmokh and ACM](https://codeforces.com/contest/414/problem/B) | 1400 | [C++23 (GCC 14-64, msys2)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/414/B%20-%20Mashmokh%20and%20ACM/solution.cpp) |
 | 1294C | [Product of Three Numbers](https://codeforces.com/contest/1294/problem/C) | 1300 | [C++17 (GCC 7-32)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1294/C%20-%20Product%20of%20Three%20Numbers/solution.cpp) |
 | 1360D | [Buying Shovels](https://codeforces.com/contest/1360/problem/D) | 1300 | [C++17 (GCC 7-32)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1360/D%20-%20Buying%20Shovels/solution.cpp) |
 | 1372B | [Omkar and Last Class of Math](https://codeforces.com/contest/1372/problem/B) | 1300 | [C++17 (GCC 7-32)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1372/B%20-%20Omkar%20and%20Last%20Class%20of%20Math/solution.cpp) |
@@ -626,6 +684,7 @@
 | 1474B | [Different Divisors](https://codeforces.com/contest/1474/problem/B) | 1000 | [C++17 (GCC 7-32)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1474/B%20-%20Different%20Divisors/solution.cpp) |
 | 1485A | [Add and Divide](https://codeforces.com/contest/1485/problem/A) | 1000 | [C++17 (GCC 7-32)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1485/A%20-%20Add%20and%20Divide/solution.cpp) |
 | 1487B | [Cat Cycle](https://codeforces.com/contest/1487/problem/B) | 1200 | [C++17 (GCC 7-32)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1487/B%20-%20Cat%20Cycle/solution.cpp) |
+| 1519C | [Berland Regional](https://codeforces.com/contest/1519/problem/C) | 1400 | [C++23 (GCC 14-64, msys2)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1519/C%20-%20Berland%20Regional/solution.cpp) |
 | 1541B | [Pleasant Pairs](https://codeforces.com/contest/1541/problem/B) | 1200 | [C++17 (GCC 7-32)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1541/B%20-%20Pleasant%20Pairs/solution.cpp) |
 | 1543A | [Exciting Bets](https://codeforces.com/contest/1543/problem/A) | 900 | [C++17 (GCC 7-32)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1543/A%20-%20Exciting%20Bets/solution.cpp) |
 | 1601A | [Array Elimination](https://codeforces.com/contest/1601/problem/A) | 1300 | [C++17 (GCC 7-32)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1601/A%20-%20Array%20Elimination/solution.cpp) |
@@ -670,16 +729,23 @@
 
 | # | Problem | Difficulty | Solution |
 |---|---------|------------|----------|
+| 1110B | [Tape](https://codeforces.com/contest/1110/problem/B) | 1400 | [C++23 (GCC 14-64, msys2)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1110/B%20-%20Tape/solution.cpp) |
 | 1119B | [Alyona and a Narrow Fridge](https://codeforces.com/contest/1119/problem/B) | 1300 | [C++17 (GCC 7-32)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1119/B%20-%20Alyona%20and%20a%20Narrow%20Fridge/solution.cpp) |
 | 1155A | [Reverse a Substring](https://codeforces.com/contest/1155/problem/A) | 1000 | [C++17 (GCC 7-32)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1155/A%20-%20Reverse%20a%20Substring/solution.cpp) |
+| 1183D | [Candy Box (easy version)](https://codeforces.com/contest/1183/problem/D) | 1400 | [C++23 (GCC 14-64, msys2)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1183/D%20-%20Candy%20Box%20(easy%20version)/solution.cpp) |
 | 1237B | [Balanced Tunnel](https://codeforces.com/contest/1237/problem/B) | 1300 | [C++17 (GCC 7-32)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1237/B%20-%20Balanced%20Tunnel/solution.cpp) |
 | 1312B | [Bogosort](https://codeforces.com/contest/1312/problem/B) | 1000 | [C++17 (GCC 7-32)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1312/B%20-%20Bogosort/solution.cpp) |
+| 1320A | [Journey Planning](https://codeforces.com/contest/1320/problem/A) | 1400 | [C++23 (GCC 14-64, msys2)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1320/A%20-%20Journey%20Planning/solution.cpp) |
+| 1374D | [Zero Remainder Array](https://codeforces.com/contest/1374/problem/D) | 1400 | [C++23 (GCC 14-64, msys2)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1374/D%20-%20Zero%20Remainder%20Array/solution.cpp) |
 | 1438B | [Valerii Against Everyone](https://codeforces.com/contest/1438/problem/B) | 1000 | [C++17 (GCC 7-32)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1438/B%20-%20Valerii%20Against%20Everyone/solution.cpp) |
 | 1470A | [Strange Birthday Party](https://codeforces.com/contest/1470/problem/A) | 1300 | [C++17 (GCC 7-32)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1470/A%20-%20Strange%20Birthday%20Party/solution.cpp) |
+| 1519C | [Berland Regional](https://codeforces.com/contest/1519/problem/C) | 1400 | [C++23 (GCC 14-64, msys2)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1519/C%20-%20Berland%20Regional/solution.cpp) |
 | 1539C | [Stable Groups](https://codeforces.com/contest/1539/problem/C) | 1200 | [C++17 (GCC 7-32)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1539/C%20-%20Stable%20Groups/solution.cpp) |
 | 1614B | [Divan and a New Project ](https://codeforces.com/contest/1614/problem/B) | 1000 | [C++17 (GCC 7-32)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1614/B%20-%20Divan%20and%20a%20New%20Project%20/solution.cpp) |
+| 1648A | [Weird Sum](https://codeforces.com/contest/1648/problem/A) | 1400 | [C++23 (GCC 14-64, msys2)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1648/A%20-%20Weird%20Sum/solution.cpp) |
 | 1665B | [Array Cloning Technique](https://codeforces.com/contest/1665/problem/B) | 900 | [C++17 (GCC 7-32)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1665/B%20-%20Array%20Cloning%20Technique/solution.cpp) |
 | 1682B | [AND Sorting](https://codeforces.com/contest/1682/problem/B) | 1100 | [C++17 (GCC 7-32)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1682/B%20-%20AND%20Sorting/solution.cpp) |
+| 1692G | [2^Sort](https://codeforces.com/contest/1692/problem/G) | 1400 | [C++23 (GCC 14-64, msys2)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1692/G%20-%202%5ESort/solution.cpp) |
 | 1703F | [Yet Another Problem About Pairs Satisfying an Inequality](https://codeforces.com/contest/1703/problem/F) | 1300 | [C++17 (GCC 7-32)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1703/F%20-%20Yet%20Another%20Problem%20About%20Pairs%20Satisfying%20an%20Inequality/solution.cpp) |
 | 1704C | [Virus](https://codeforces.com/contest/1704/problem/C) | 1200 | [C++17 (GCC 7-32)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1704/C%20-%20Virus/solution.cpp) |
 | 1725B | [Basketball Together](https://codeforces.com/contest/1725/problem/B) | 1000 | [C++17 (GCC 7-32)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1725/B%20-%20Basketball%20Together/solution.cpp) |
@@ -755,6 +821,7 @@
 | 1237B | [Balanced Tunnel](https://codeforces.com/contest/1237/problem/B) | 1300 | [C++17 (GCC 7-32)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1237/B%20-%20Balanced%20Tunnel/solution.cpp) |
 | 1364B | [Most socially-distanced subsequence](https://codeforces.com/contest/1364/problem/B) | 1300 | [C++17 (GCC 7-32)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1364/B%20-%20Most%20socially-distanced%20subsequence/solution.cpp) |
 | 1366B | [Shuffle](https://codeforces.com/contest/1366/problem/B) | 1300 | [C++17 (GCC 7-32)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1366/B%20-%20Shuffle/solution.cpp) |
+| 1374D | [Zero Remainder Array](https://codeforces.com/contest/1374/problem/D) | 1400 | [C++23 (GCC 14-64, msys2)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1374/D%20-%20Zero%20Remainder%20Array/solution.cpp) |
 | 1470A | [Strange Birthday Party](https://codeforces.com/contest/1470/problem/A) | 1300 | [C++17 (GCC 7-32)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1470/A%20-%20Strange%20Birthday%20Party/solution.cpp) |
 | 1582C | [Grandma Capa Knits a Scarf](https://codeforces.com/contest/1582/problem/C) | 1200 | [C++17 (GCC 7-32)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1582/C%20-%20Grandma%20Capa%20Knits%20a%20Scarf/solution.cpp) |
 | 1610B | [Kalindrome Array](https://codeforces.com/contest/1610/problem/B) | 1100 | [C++17 (GCC 7-32)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1610/B%20-%20Kalindrome%20Array/solution.cpp) |
@@ -763,6 +830,7 @@
 | 1690D | [Black and White Stripe](https://codeforces.com/contest/1690/problem/D) | 1000 | [C++17 (GCC 7-32)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1690/D%20-%20Black%20and%20White%20Stripe/solution.cpp) |
 | 1691B | [Shoe Shuffling](https://codeforces.com/contest/1691/problem/B) | 1000 | [C++17 (GCC 7-32)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1691/B%20-%20Shoe%20Shuffling/solution.cpp) |
 | 1692E | [Binary Deque](https://codeforces.com/contest/1692/problem/E) | 1200 | [C++17 (GCC 7-32)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1692/E%20-%20Binary%20Deque/solution.cpp) |
+| 1692G | [2^Sort](https://codeforces.com/contest/1692/problem/G) | 1400 | [C++23 (GCC 14-64, msys2)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1692/G%20-%202%5ESort/solution.cpp) |
 | 1729D | [Friends and the Restaurant](https://codeforces.com/contest/1729/problem/D) | 1200 | [C++17 (GCC 7-32)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1729/D%20-%20Friends%20and%20the%20Restaurant/solution.cpp) |
 | 1744C | [Traffic Light](https://codeforces.com/contest/1744/problem/C) | 1000 | [C++17 (GCC 7-32)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1744/C%20-%20Traffic%20Light/solution.cpp) |
 | 1771B | [Hossam and Friends](https://codeforces.com/contest/1771/problem/B) | 1400 | [C++17 (GCC 7-32)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1771/B%20-%20Hossam%20and%20Friends/solution.cpp) |
