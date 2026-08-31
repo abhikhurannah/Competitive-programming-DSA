@@ -1,0 +1,24 @@
+<h2><a href="https://codeforces.com/contest/1373/problem/C" target="_blank" rel="noopener noreferrer">1373C — Pluses and Minuses</a></h2>
+
+| | |
+|---|---|
+| **Difficulty** | 1300 |
+| **Language** | C++23 (GCC 14-64, msys2) |
+| **Verdict** | ✅ Accepted |
+| **Problem Link** | [Codeforces 1373C](https://codeforces.com/contest/1373/problem/C) |
+
+## Topics
+`math`
+
+---
+
+## Problem Statement
+
+<div class="header"><div class="title">C. Pluses and Minuses</div><div class="time-limit"><div class="property-title">time limit per test</div>2 seconds</div><div class="memory-limit"><div class="property-title">memory limit per test</div>256 megabytes</div><div class="input-file input-standard"><div class="property-title">input</div>standard input</div><div class="output-file output-standard"><div class="property-title">output</div>standard output</div></div><div><p>You are given a string $$$s$$$ consisting only of characters <span class="tex-font-style-tt">+</span> and <span class="tex-font-style-tt">-</span>. You perform some process with this string. This process can be described by the following pseudocode: </p><pre class="lstlisting"><code class="prettyprint prettyprinted" style=""><span class="pln">res </span><span class="pun">=</span><span class="pln"> </span><span class="lit">0</span><br><span class="kwd">for</span><span class="pln"> init </span><span class="pun">=</span><span class="pln"> </span><span class="lit">0</span><span class="pln"> to inf</span><br><span class="pln">    cur </span><span class="pun">=</span><span class="pln"> init</span><br><span class="pln">    ok </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">true</span><br><span class="pln">    </span><span class="kwd">for</span><span class="pln"> i </span><span class="pun">=</span><span class="pln"> </span><span class="lit">1</span><span class="pln"> to </span><span class="pun">|</span><span class="pln">s</span><span class="pun">|</span><br><span class="pln">        res </span><span class="pun">=</span><span class="pln"> res </span><span class="pun">+</span><span class="pln"> </span><span class="lit">1</span><br><span class="pln">        </span><span class="kwd">if</span><span class="pln"> s</span><span class="pun">[</span><span class="pln">i</span><span class="pun">]</span><span class="pln"> </span><span class="pun">==</span><span class="pln"> </span><span class="str">'+'</span><br><span class="pln">            cur </span><span class="pun">=</span><span class="pln"> cur </span><span class="pun">+</span><span class="pln"> </span><span class="lit">1</span><br><span class="pln">        </span><span class="kwd">else</span><br><span class="pln">            cur </span><span class="pun">=</span><span class="pln"> cur </span><span class="pun">-</span><span class="pln"> </span><span class="lit">1</span><br><span class="pln">        </span><span class="kwd">if</span><span class="pln"> cur </span><span class="pun"><</span><span class="pln"> </span><span class="lit">0</span><br><span class="pln">            ok </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">false</span><br><span class="pln">            </span><span class="kwd">break</span><br><span class="pln">    </span><span class="kwd">if</span><span class="pln"> ok</span><br><span class="pln">        </span><span class="kwd">break</span><br></code></pre><p>Note that the $$$inf$$$ denotes infinity, and the characters of the string are numbered from $$$1$$$ to $$$|s|$$$.</p><p>You have to calculate the value of the $$$res$$$ after the process ends.</p></div><div class="input-specification"><div class="section-title">Input</div><p>The first line contains one integer $$$t$$$ ($$$1 \le t \le 1000$$$) — the number of test cases.</p><p>The only lines of each test case contains string $$$s$$$ ($$$1 \le |s| \le 10^6$$$) consisting only of characters <span class="tex-font-style-tt">+</span> and <span class="tex-font-style-tt">-</span>.</p><p>It's guaranteed that sum of $$$|s|$$$ over all test cases doesn't exceed $$$10^6$$$.</p></div><div class="output-specification"><div class="section-title">Output</div><p>For each test case print one integer — the value of the $$$res$$$ after the process ends.</p></div><div class="sample-tests"><div class="section-title">Example</div><div class="sample-test"><div class="input"><div class="title">Input<div title="Copy" data-clipboard-target="#id00660765921837142" id="id009348228367800308" class="input-output-copier">Copy</div></div><pre id="id00660765921837142">3
+--+-
+---
+++--+-
+</pre></div><div class="output"><div class="title">Output<div title="Copy" data-clipboard-target="#id009823233218365685" id="id007508203521640034" class="input-output-copier">Copy</div></div><pre id="id009823233218365685">7
+9
+6
+</pre></div></div></div>
