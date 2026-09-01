@@ -18,18 +18,9 @@ public:
             }
             bool lft = f(f,node->left);
             bool rht = f(f, node->right);
-            if(lft && rht){
-                node->left = NULL;
-                node->right = NULL;
-                return node->val == 0;   
-            }
-            if(lft){
-                node->left = NULL;  
-            }
-            if(rht){
-                node->right = NULL; 
-            }
-            return lft && rht;
+            if(lft) node->left = NULL;  
+            if(rht) node->right = NULL; 
+            return lft && rht && node->val == 0;
         };
         
         return !f(f,root) ? root : NULL;
