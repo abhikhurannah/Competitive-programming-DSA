@@ -6,7 +6,7 @@
 
 | Total Problems | Topics |
 |---|---|
-| 561 | 35 |
+| 562 | 35 |
 
 ---
 
@@ -14,7 +14,7 @@
 
 - [*special](#special) (2)
 - [2-sat](#2-sat) (1)
-- [Uncategorized](#uncategorized) (6)
+- [Uncategorized](#uncategorized) (7)
 - [binary search](#binary-search) (61)
 - [bitmasks](#bitmasks) (31)
 - [brute force](#brute-force) (108)
@@ -73,6 +73,7 @@
 | 2220C | [Grid L](https://codeforces.com/contest/2220/problem/C) | Unrated | [C++23 (GCC 14-64, msys2)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/2220/C%20-%20Grid%20L/solution.cpp) |
 | 2240C | [Nim Game Is XOR Game](https://codeforces.com/contest/2240/problem/C) | Unrated | [C++23 (GCC 14-64, msys2)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/2240/C%20-%20Nim%20Game%20Is%20XOR%20Game/solution.cpp) |
 | 2250C | [Rank Subsequence](https://codeforces.com/contest/2250/problem/C) | Unrated | [C++23 (GCC 14-64, msys2)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/2250/C%20-%20Rank%20Subsequence/solution.cpp) |
+| 2260A | [Monocarp's Contest](https://codeforces.com/contest/2260/problem/A) | Unrated | [C++23 (GCC 14-64, msys2)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/2260/A%20-%20Monocarp's%20Contest/solution.cpp) |
 
 ### binary search
 
