@@ -6,7 +6,7 @@
 
 | Total Problems | Topics |
 |---|---|
-| 565 | 35 |
+| 566 | 35 |
 
 ---
 
@@ -14,7 +14,7 @@
 
 - [*special](#special) (2)
 - [2-sat](#2-sat) (1)
-- [Uncategorized](#uncategorized) (10)
+- [Uncategorized](#uncategorized) (11)
 - [binary search](#binary-search) (61)
 - [bitmasks](#bitmasks) (31)
 - [brute force](#brute-force) (108)
@@ -77,6 +77,7 @@
 | 2260B | [Monocarp and Projects](https://codeforces.com/contest/2260/problem/B) | Unrated | [C++23 (GCC 14-64, msys2)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/2260/B%20-%20Monocarp%20and%20Projects/solution.cpp) |
 | 2260C | [Maximize XOR, Minimize Operations](https://codeforces.com/contest/2260/problem/C) | Unrated | [C++23 (GCC 14-64, msys2)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/2260/C%20-%20Maximize%20XOR%2C%20Minimize%20Operations/solution.cpp) |
 | 2260D | [Signs of Prefix Sums](https://codeforces.com/contest/2260/problem/D) | Unrated | [C++23 (GCC 14-64, msys2)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/2260/D%20-%20Signs%20of%20Prefix%20Sums/solution.cpp) |
+| 2263C1 | [Floor of MEX (Easy Version)](https://codeforces.com/contest/2263/problem/C1) | Unrated | [C++23 (GCC 14-64, msys2)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/2263/C1%20-%20Floor%20of%20MEX%20(Easy%20Version)/solution.cpp) |
 
 ### binary search
 
