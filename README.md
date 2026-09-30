@@ -6,7 +6,7 @@
 
 | Total Problems | Topics |
 |---|---|
-| 567 | 35 |
+| 568 | 35 |
 
 ---
 
@@ -16,11 +16,11 @@
 - [2-sat](#2-sat) (1)
 - [Uncategorized](#uncategorized) (12)
 - [binary search](#binary-search) (61)
-- [bitmasks](#bitmasks) (31)
+- [bitmasks](#bitmasks) (32)
 - [brute force](#brute-force) (108)
 - [chinese remainder theorem](#chinese-remainder-theorem) (1)
 - [combinatorics](#combinatorics) (34)
-- [constructive algorithms](#constructive-algorithms) (99)
+- [constructive algorithms](#constructive-algorithms) (100)
 - [data structures](#data-structures) (65)
 - [dfs and similar](#dfs-and-similar) (31)
 - [divide and conquer](#divide-and-conquer) (2)
@@ -32,13 +32,13 @@
 - [geometry](#geometry) (12)
 - [graph matchings](#graph-matchings) (4)
 - [graphs](#graphs) (23)
-- [greedy](#greedy) (248)
+- [greedy](#greedy) (249)
 - [hashing](#hashing) (6)
 - [implementation](#implementation) (124)
 - [interactive](#interactive) (1)
 - [math](#math) (235)
 - [matrices](#matrices) (2)
-- [number theory](#number-theory) (74)
+- [number theory](#number-theory) (75)
 - [probabilities](#probabilities) (1)
 - [schedules](#schedules) (3)
 - [shortest paths](#shortest-paths) (9)
@@ -154,6 +154,7 @@
 | 242E | [XOR on Segment](https://codeforces.com/contest/242/problem/E) | 2000 | [C++23 (GCC 14-64, msys2)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/242/E%20-%20XOR%20on%20Segment/solution.cpp) |
 | 895C | [Square Subsets](https://codeforces.com/contest/895/problem/C) | 2000 | [C++23 (GCC 14-64, msys2)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/895/C%20-%20Square%20Subsets/solution.cpp) |
 | 1151B | [Dima and a Bad XOR](https://codeforces.com/contest/1151/problem/B) | 1600 | [C++23 (GCC 14-64, msys2)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1151/B%20-%20Dima%20and%20a%20Bad%20XOR/solution.cpp) |
+| 1325D | [Ehab the Xorcist](https://codeforces.com/contest/1325/problem/D) | 1700 | [C++23 (GCC 14-64, msys2)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1325/D%20-%20Ehab%20the%20Xorcist/solution.cpp) |
 | 1360F | [Spy-string](https://codeforces.com/contest/1360/problem/F) | 1700 | [C++23 (GCC 14-64, msys2)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1360/F%20-%20Spy-string/solution.cpp) |
 | 1362C | [Johnny and Another Rating Drop](https://codeforces.com/contest/1362/problem/C) | 1400 | [C++23 (GCC 14-64, msys2)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1362/C%20-%20Johnny%20and%20Another%20Rating%20Drop/solution.cpp) |
 | 1420B | [Rock and Lever](https://codeforces.com/contest/1420/problem/B) | 1200 | [C++17 (GCC 7-32)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1420/B%20-%20Rock%20and%20Lever/solution.cpp) |
@@ -351,6 +352,7 @@
 | 1151B | [Dima and a Bad XOR](https://codeforces.com/contest/1151/problem/B) | 1600 | [C++23 (GCC 14-64, msys2)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1151/B%20-%20Dima%20and%20a%20Bad%20XOR/solution.cpp) |
 | 1196B | [Odd Sum Segments](https://codeforces.com/contest/1196/problem/B) | 1200 | [C++23 (GCC 14-64, msys2)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1196/B%20-%20Odd%20Sum%20Segments/solution.cpp) |
 | 1312B | [Bogosort](https://codeforces.com/contest/1312/problem/B) | 1000 | [C++17 (GCC 7-32)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1312/B%20-%20Bogosort/solution.cpp) |
+| 1325D | [Ehab the Xorcist](https://codeforces.com/contest/1325/problem/D) | 1700 | [C++23 (GCC 14-64, msys2)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1325/D%20-%20Ehab%20the%20Xorcist/solution.cpp) |
 | 1360F | [Spy-string](https://codeforces.com/contest/1360/problem/F) | 1700 | [C++23 (GCC 14-64, msys2)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1360/F%20-%20Spy-string/solution.cpp) |
 | 1365B | [Trouble Sort](https://codeforces.com/contest/1365/problem/B) | 1300 | [C++23 (GCC 14-64, msys2)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1365/B%20-%20Trouble%20Sort/solution.cpp) |
 | 1365D | [Solve The Maze](https://codeforces.com/contest/1365/problem/D) | 1700 | [C++23 (GCC 14-64, msys2)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1365/D%20-%20Solve%20The%20Maze/solution.cpp) |
@@ -781,6 +783,7 @@
 | 1307B | [Cow and Friend](https://codeforces.com/contest/1307/problem/B) | 1300 | [C++23 (GCC 14-64, msys2)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1307/B%20-%20Cow%20and%20Friend/solution.cpp) |
 | 1320A | [Journey Planning](https://codeforces.com/contest/1320/problem/A) | 1400 | [C++23 (GCC 14-64, msys2)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1320/A%20-%20Journey%20Planning/solution.cpp) |
 | 1323B | [Count Subrectangles](https://codeforces.com/contest/1323/problem/B) | 1500 | [C++23 (GCC 14-64, msys2)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1323/B%20-%20Count%20Subrectangles/solution.cpp) |
+| 1325D | [Ehab the Xorcist](https://codeforces.com/contest/1325/problem/D) | 1700 | [C++23 (GCC 14-64, msys2)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1325/D%20-%20Ehab%20the%20Xorcist/solution.cpp) |
 | 1332C | [K-Complete Word](https://codeforces.com/contest/1332/problem/C) | 1500 | [C++23 (GCC 14-64, msys2)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1332/C%20-%20K-Complete%20Word/solution.cpp) |
 | 1335C | [Two Teams Composing](https://codeforces.com/contest/1335/problem/C) | 1100 | [C++23 (GCC 14-64, msys2)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1335/C%20-%20Two%20Teams%20Composing/solution.cpp) |
 | 1336A | [Linova and Kingdom](https://codeforces.com/contest/1336/problem/A) | 1600 | [C++23 (GCC 14-64, msys2)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1336/A%20-%20Linova%20and%20Kingdom/solution.cpp) |
@@ -1406,6 +1409,7 @@
 | 1155C | [Alarm Clocks Everywhere](https://codeforces.com/contest/1155/problem/C) | 1300 | [C++23 (GCC 14-64, msys2)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1155/C%20-%20Alarm%20Clocks%20Everywhere/solution.cpp) |
 | 1294C | [Product of Three Numbers](https://codeforces.com/contest/1294/problem/C) | 1300 | [C++17 (GCC 7-32)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1294/C%20-%20Product%20of%20Three%20Numbers/solution.cpp) |
 | 1305C | [Kuroni and Impossible Calculation](https://codeforces.com/contest/1305/problem/C) | 1600 | [C++23 (GCC 14-64, msys2)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1305/C%20-%20Kuroni%20and%20Impossible%20Calculation/solution.cpp) |
+| 1325D | [Ehab the Xorcist](https://codeforces.com/contest/1325/problem/D) | 1700 | [C++23 (GCC 14-64, msys2)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1325/D%20-%20Ehab%20the%20Xorcist/solution.cpp) |
 | 1350B | [Orac and Models](https://codeforces.com/contest/1350/problem/B) | 1400 | [C++23 (GCC 14-64, msys2)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1350/B%20-%20Orac%20and%20Models/solution.cpp) |
 | 1360D | [Buying Shovels](https://codeforces.com/contest/1360/problem/D) | 1300 | [C++17 (GCC 7-32)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1360/D%20-%20Buying%20Shovels/solution.cpp) |
 | 1372B | [Omkar and Last Class of Math](https://codeforces.com/contest/1372/problem/B) | 1300 | [C++17 (GCC 7-32)](https://github.com/abhikhurannah/Competitive-programming-DSA/blob/HEAD/1372/B%20-%20Omkar%20and%20Last%20Class%20of%20Math/solution.cpp) |
